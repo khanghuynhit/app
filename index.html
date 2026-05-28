@@ -425,7 +425,7 @@ async function sbBackupAll(data) {
     if ((_data$ideation = data.ideation) !== null && _data$ideation !== void 0 && _data$ideation.length) await sb.from('ideation').upsert(data.ideation.map(i => ({
       id: i.id,
       title: i.title,
-      desc: i.desc || '',
+      description: i.desc || '',
       stage: i.stage || 'General',
       status: i.status || 'Draft',
       author: i.author || '',
@@ -2449,7 +2449,7 @@ function App() {
     sbUpsert('ideation', {
       id: idea.id,
       title: idea.title,
-      desc: idea.desc,
+      description: idea.desc,
       stage: idea.stage,
       status: idea.status,
       author: idea.author,

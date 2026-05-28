@@ -10,6 +10,7 @@
         ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}
         ::-webkit-scrollbar-thumb{background:#334155;border-radius:9px}
         @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
     </style>
 </head>
 <body>
@@ -2045,7 +2046,8 @@ function App() {
   const [studyProgress, setStudyProgress] = useState(() => ls.get('progress', {}));
   const [tasks, setTasks] = useState(() => ls.get('tasks', []));
   const [reports, setReports] = useState(() => ls.get('reports', []));
-  const [chatMessages, setChatMessages] = useState(() => ls.get('chat', []));
+  const [chatMessages, setChatMessages] = useState([]);
+  const [chatLoading, setChatLoading] = useState(true);
   const [discoveries, setDiscoveries] = useState(() => ls.get('discoveries', []));
   const [stageTimers, setStageTimers] = useState(() => ls.get('timers', {}));
   const [customTech, setCustomTech] = useState(() => ls.get('tech', []));
@@ -2087,9 +2089,7 @@ function App() {
   useEffect(() => {
     ls.set('reports', reports);
   }, [reports]);
-  useEffect(() => {
-    ls.set('chat', chatMessages);
-  }, [chatMessages]);
+  // chat persisted via Supabase only
   useEffect(() => {
     ls.set('discoveries', discoveries);
   }, [discoveries]);
@@ -2115,11 +2115,48 @@ function App() {
     }
   }, []);
 
-  // Supabase init
+  // Supabase init + realtime chat
   useEffect(() => {
     const tryInit = () => {
       if (window.supabase && window.supabase.createClient) {
-        setSupabase(window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY));
+        const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        setSupabase(sb);
+
+        // Load existing chat messages
+        sb.from('chat').select('*').order('timestamp', {
+          ascending: true
+        }).then(({
+          data
+        }) => {
+          if (data) setChatMessages(data.map(m => ({
+            id: m.id,
+            text: m.text,
+            sender: m.sender,
+            role: m.role,
+            timestamp: m.timestamp
+          })));
+          setChatLoading(false);
+        });
+
+        // Subscribe to new messages in realtime
+        const channel = sb.channel('chat_room').on('postgres_changes', {
+          event: 'INSERT',
+          schema: 'public',
+          table: 'chat'
+        }, payload => {
+          const m = payload.new;
+          setChatMessages(prev => {
+            if (prev.find(x => x.id === m.id)) return prev;
+            return [...prev, {
+              id: m.id,
+              text: m.text,
+              sender: m.sender,
+              role: m.role,
+              timestamp: m.timestamp
+            }];
+          });
+        }).subscribe();
+        return () => sb.removeChannel(channel);
       } else {
         setTimeout(tryInit, 200);
       }
@@ -2369,7 +2406,7 @@ function App() {
     sbDelete('reports', id);
     toast('Đã xóa.');
   };
-  const handleSendChat = e => {
+  const handleSendChat = async e => {
     e.preventDefault();
     if (!chatText.trim()) return;
     const m = {
@@ -2379,8 +2416,21 @@ function App() {
       role: partner,
       timestamp: Date.now()
     };
-    setChatMessages(p => [...p, m]);
     setChatText('');
+    // Save to Supabase — realtime subscription will update UI for both users
+    const sb = getSB();
+    if (sb && navigator.onLine) {
+      await sb.from('chat').insert({
+        id: m.id,
+        text: m.text,
+        sender: m.sender,
+        role: m.role,
+        timestamp: m.timestamp
+      });
+    } else {
+      // Offline fallback: add locally
+      setChatMessages(p => [...p, m]);
+    }
   };
   const handleAddDiscovery = e => {
     e.preventDefault();
@@ -4421,17 +4471,48 @@ function App() {
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
       fontWeight: 900,
       color: '#0f172a',
       fontSize: 15
     }
   }, "Ph\xF2ng Th\u1EA3o Lu\u1EADn"), /*#__PURE__*/React.createElement("div", {
     style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 5,
+      background: '#f0fdf4',
+      border: '1px solid #bbf7d0',
+      borderRadius: 99,
+      padding: '3px 10px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 6,
+      height: 6,
+      borderRadius: '50%',
+      background: '#10b981',
+      animation: 'pulse 2s infinite'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 900,
+      color: '#059669'
+    }
+  }, "LIVE"))), /*#__PURE__*/React.createElement("div", {
+    style: {
       fontSize: 12,
       color: '#94a3b8',
       marginTop: 2
     }
-  }, "D\u1EEF li\u1EC7u l\u01B0u local")), /*#__PURE__*/React.createElement("div", {
+  }, "Realtime \u2014 Th\u1ECBnh & Khang c\xF9ng th\u1EA5y")), /*#__PURE__*/React.createElement("div", {
+    id: "chat-messages",
     style: {
       flex: 1,
       overflowY: 'auto',
@@ -4440,6 +4521,9 @@ function App() {
       flexDirection: 'column',
       gap: 12,
       background: '#f8fafc'
+    },
+    ref: el => {
+      if (el) el.scrollTop = el.scrollHeight;
     }
   }, chatMessages.map(m => /*#__PURE__*/React.createElement("div", {
     key: m.id,
@@ -4469,7 +4553,14 @@ function App() {
       borderTopRightRadius: m.sender === partnerName ? 4 : 16,
       borderTopLeftRadius: m.sender === partnerName ? 16 : 4
     }
-  }, m.text))), !chatMessages.length && /*#__PURE__*/React.createElement("div", {
+  }, m.text))), chatLoading && /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      color: '#94a3b8',
+      fontSize: 13,
+      marginTop: 80
+    }
+  }, "\u23F3 \u0110ang t\u1EA3i tin nh\u1EAFn..."), !chatLoading && !chatMessages.length && /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: 'center',
       color: '#94a3b8',

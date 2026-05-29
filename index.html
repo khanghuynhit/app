@@ -512,17 +512,89 @@ const STAGES = [{
   constraint: "💰 Budget $50/tháng → bỏ Redis, dùng PostgreSQL cho cache.",
   time: "4 tuần (Full-time) | 8 tuần (Part-time)",
   resources: [{
-    category: "C#/.NET",
-    name: "Microsoft Learn – .NET",
-    link: "https://learn.microsoft.com/dotnet/"
+    category: 'C# cơ bản',
+    name: 'Microsoft Learn – Học C#',
+    link: 'https://learn.microsoft.com/vi-vn/dotnet/csharp/'
   }, {
-    category: "DDD",
-    name: "DDD by Eric Evans",
-    link: "https://www.domainlanguage.com/ddd/"
+    category: '.NET docs',
+    name: 'Microsoft Learn – .NET documentation',
+    link: 'https://learn.microsoft.com/en-us/dotnet/'
   }, {
-    category: "Clean Arch",
-    name: "ASP.NET Core Clean Architecture",
-    link: "https://github.com"
+    category: 'Roadmap tổng quan',
+    name: 'milanm/DotNet-Developer-Roadmap (GitHub)',
+    link: 'https://github.com/milanm/DotNet-Developer-Roadmap'
+  }, {
+    category: 'Video tổng quan',
+    name: 'The Ultimate .NET Developer Roadmap 2024 (YouTube)',
+    link: 'https://www.youtube.com/watch?v=7lSBgDMuAao'
+  }, {
+    category: 'EF Core',
+    name: '⭐ 🆕 EF Core – Getting Started (Microsoft)',
+    link: 'https://learn.microsoft.com/en-us/ef/core/get-started/'
+  }, {
+    category: 'EF Core',
+    name: '🆕 EF Core – Code First Migrations',
+    link: 'https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/'
+  }, {
+    category: 'PostgreSQL',
+    name: '⭐ 🆕 PostgreSQL Tutorial – Beginners',
+    link: 'https://www.postgresqltutorial.com/'
+  }, {
+    category: 'Architecture',
+    name: 'Repository Pattern in ASP.NET Core (C# Corner)',
+    link: 'https://www.c-sharpcorner.com/article/repository-pattern-in-asp-net-core/'
+  }, {
+    category: 'Architecture',
+    name: 'How to Structure a .NET Solution That Actually Scales',
+    link: 'https://dev.to/'
+  }, {
+    category: 'Architecture',
+    name: '⭐ ASP.NET Core 8 Clean Architecture (CQRS, MediatR, EF Core)',
+    link: 'https://github.com/jasontaylordev/CleanArchitecture'
+  }, {
+    category: 'DDD',
+    name: 'Microsoft Learn – Domain-Driven Design',
+    link: 'https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis'
+  }, {
+    category: 'DDD',
+    name: 'ddd-crew/free-ddd-learning-resources (GitHub)',
+    link: 'https://github.com/ddd-crew/free-ddd-learning-resources'
+  }, {
+    category: 'DDD – sách',
+    name: 'Learning Domain-Driven Design – Vlad Khononov (O\'Reilly)',
+    link: 'https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/'
+  }, {
+    category: 'DDD – mẫu code',
+    name: '⭐ 🆕 eShopOnContainers (Microsoft) – DDD Aggregate mẫu',
+    link: 'https://github.com/dotnet-architecture/eShopOnContainers'
+  }, {
+    category: 'Logging',
+    name: '⭐ 🆕 Serilog Documentation',
+    link: 'https://serilog.net/'
+  }, {
+    category: 'Logging',
+    name: '🆕 Correlation ID trong ASP.NET Core',
+    link: 'https://www.stevejgordon.co.uk/using-correlation-ids-in-asp-net-core-logging'
+  }, {
+    category: 'Health Check',
+    name: '🆕 Health Checks in ASP.NET Core (Microsoft)',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks'
+  }, {
+    category: 'Background Job',
+    name: '⭐ 🆕 Hangfire Documentation',
+    link: 'https://docs.hangfire.io/'
+  }, {
+    category: 'Cache',
+    name: '🆕 Distributed Cache với Redis trong ASP.NET Core',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/performance/caching/distributed'
+  }, {
+    category: 'Testing',
+    name: '⭐ 🆕 xUnit.net Documentation',
+    link: 'https://xunit.net/'
+  }, {
+    category: 'Testing',
+    name: '🆕 Testcontainers for .NET',
+    link: 'https://dotnet.testcontainers.org/'
   }]
 }, {
   id: "stage-f1",
@@ -587,17 +659,57 @@ const STAGES = [{
   constraint: "Không có.",
   time: "4 tuần (Full-time) | 8 tuần (Part-time)",
   resources: [{
-    category: "Messaging",
-    name: "MediatR GitHub",
-    link: "https://github.com/jbogard/MediatR"
+    category: 'Bridge',
+    name: '⭐ 🆕 Modular Monolith with DDD – Kamil Grzybek',
+    link: 'https://github.com/kgrzybek/modular-monolith-with-ddd'
   }, {
-    category: "Testing",
-    name: "Pact Docs",
-    link: "https://docs.pact.io"
+    category: 'Bridge',
+    name: '🆕 Jimmy Bogard – Domain-Driven Refactoring (NDC 2022)',
+    link: 'https://www.youtube.com/watch?v=f64tZ90Dntg'
   }, {
-    category: "Resilience",
-    name: "Polly Docs",
-    link: "https://github.com/App-vNext/Polly"
+    category: 'MediatR',
+    name: '⭐ MediatR GitHub + Wiki',
+    link: 'https://github.com/jbogard/MediatR/wiki'
+  }, {
+    category: 'MediatR',
+    name: '🆕 MediatR + Pipeline Behaviors (Jimmy Bogard blog)',
+    link: 'https://www.jimmybogard.com/sharing-context-in-mediatr-pipelines/'
+  }, {
+    category: 'Scrutor',
+    name: '⭐ 🆕 Scrutor – GitHub',
+    link: 'https://github.com/khellang/Scrutor'
+  }, {
+    category: 'Scrutor',
+    name: '🆕 Using Scrutor for Assembly Scanning in .NET (blog)',
+    link: 'https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/'
+  }, {
+    category: 'Polly',
+    name: '⭐ Polly Documentation',
+    link: 'https://github.com/App-vNext/Polly'
+  }, {
+    category: 'Polly',
+    name: '🆕 Microsoft Resilience with Polly (Microsoft.Extensions.Http.Resilience)',
+    link: 'https://learn.microsoft.com/en-us/dotnet/core/resilience/'
+  }, {
+    category: 'API Versioning',
+    name: '⭐ API Versioning trong ASP.NET Core (Microsoft Learn)',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/web-api/'
+  }, {
+    category: 'API Versioning',
+    name: '🆕 Asp.Versioning.Http (NuGet) – Getting Started',
+    link: 'https://github.com/dotnet/aspnet-api-versioning/wiki'
+  }, {
+    category: 'Contract Testing',
+    name: '⭐ Pact Documentation',
+    link: 'https://docs.pact.io/'
+  }, {
+    category: 'Background Job',
+    name: 'Hangfire – Advanced (Recurring, Continuations, Batches)',
+    link: 'https://docs.hangfire.io/en/latest/'
+  }, {
+    category: 'Distributed Lock',
+    name: '🆕 RedLock.net – GitHub',
+    link: 'https://github.com/samcook/RedLock.net'
   }]
 }, {
   id: "stage-f2",
@@ -659,13 +771,73 @@ const STAGES = [{
   maintenance: "⏳ Bảo trì 2 tháng → viết Maintenance Retrospective.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: "Pattern",
-    name: "MassTransit Outbox Demo",
-    link: "https://github.com"
+    category: 'Bridge – Docker',
+    name: '⭐ 🆕 Docker Getting Started (Official)',
+    link: 'https://docs.docker.com/get-started/'
   }, {
-    category: "Broker",
-    name: "RabbitMQ Tutorials",
-    link: "https://www.rabbitmq.com/getstarted.html"
+    category: 'Bridge – Docker',
+    name: '🆕 Docker Compose Overview',
+    link: 'https://docs.docker.com/compose/'
+  }, {
+    category: 'Bridge – Concepts',
+    name: '🆕 Martin Fowler – Microservices (concepts + CAP)',
+    link: 'https://martinfowler.com/articles/microservices.html'
+  }, {
+    category: 'Bridge – Patterns',
+    name: '⭐ 🆕 Strangler Fig Pattern (Martin Fowler)',
+    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html'
+  }, {
+    category: 'Message Broker',
+    name: '⭐ RabbitMQ Tutorials (Official)',
+    link: 'https://www.rabbitmq.com/tutorials'
+  }, {
+    category: 'MassTransit',
+    name: '⭐ 🆕 MassTransit Documentation (Official)',
+    link: 'https://masstransit.io/documentation/'
+  }, {
+    category: 'MassTransit Demo',
+    name: 'MassTransitOutboxDemo (GitHub)',
+    link: 'https://github.com/MassTransit/Sample-Outbox'
+  }, {
+    category: 'Outbox',
+    name: '⭐ Event-Driven Architecture: Async Messaging Patterns (2025)',
+    link: 'https://event-driven.io/en/outbox_inbox_patterns_and_delivery_guarantees_explained/'
+  }, {
+    category: 'Outbox + Saga',
+    name: 'Building a Reliable Rollback System with SAGA, Outbox (Medium)',
+    link: 'https://medium.com/'
+  }, {
+    category: 'Idempotency',
+    name: '⭐ 🆕 Idempotency Key Pattern (Stripe Engineering Blog)',
+    link: 'https://stripe.com/blog/idempotency'
+  }, {
+    category: 'Saga',
+    name: '⭐ Event-Driven Architecture Pocket Guide (sách)',
+    link: 'https://www.oreilly.com/library/view/event-driven-architecture-pocket/9781098157074/'
+  }, {
+    category: 'Saga',
+    name: '🆕 MassTransit – State Machine Saga (Automatonymous)',
+    link: 'https://masstransit.io/documentation/patterns/saga/state-machine'
+  }, {
+    category: 'Serialization',
+    name: '⭐ 🆕 Protobuf .NET (protobuf-net)',
+    link: 'https://github.com/protobuf-net/protobuf-net'
+  }, {
+    category: 'Schema Evolution',
+    name: '🆕 Backward/Forward Compatibility với Protobuf',
+    link: 'https://protobuf.dev/programming-guides/dos-donts/'
+  }, {
+    category: 'Schema Evolution',
+    name: '🆕 Schema Registry Concepts (Confluent)',
+    link: 'https://docs.confluent.io/platform/current/schema-registry/fundamentals/'
+  }, {
+    category: 'Observability',
+    name: '⭐ 🆕 OpenTelemetry for .NET (Official)',
+    link: 'https://opentelemetry.io/docs/languages/dotnet/'
+  }, {
+    category: 'Observability',
+    name: '🆕 Distributed Tracing trong ASP.NET Core (Microsoft)',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/log-mon/distributed-tracing'
   }]
 }, {
   id: "stage-f3",
@@ -723,13 +895,65 @@ const STAGES = [{
   constraint: "Không có.",
   time: "5 tuần (Full-time) | 10 tuần (Part-time)",
   resources: [{
-    category: "PostgreSQL",
-    name: "PostgreSQL Performance",
-    link: "https://www.postgresql.org/"
+    category: 'Bridge – EF Core',
+    name: '⭐ 🆕 Efficient Querying with EF Core (N+1, Include)',
+    link: 'https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying'
   }, {
-    category: "RLS",
-    name: "Row Level Security",
-    link: "https://www.postgresql.org/docs/"
+    category: 'Bridge – Connection Pool',
+    name: '🆕 PgBouncer – Connection Pooling for PostgreSQL',
+    link: 'https://www.pgbouncer.org/'
+  }, {
+    category: 'Performance',
+    name: '⭐ PostgreSQL Tutorial: Performance Optimization',
+    link: 'https://rockdata.net/tutorial/postgres-performance/'
+  }, {
+    category: 'Performance',
+    name: '⭐ 🆕 pg_stat_statements – Official Docs',
+    link: 'https://www.postgresql.org/docs/current/pgstatstatements.html'
+  }, {
+    category: 'Labs',
+    name: 'advanced-postgresql-practical-labs (GitHub)',
+    link: 'https://github.com/'
+  }, {
+    category: 'Internals',
+    name: '⭐ 🆕 MVCC trong PostgreSQL – Official Docs',
+    link: 'https://www.postgresql.org/docs/current/mvcc.html'
+  }, {
+    category: 'Deadlock',
+    name: '🆕 Deadlock Detection & Prevention (PostgreSQL Wiki)',
+    link: 'https://wiki.postgresql.org/wiki/Lock_Monitoring'
+  }, {
+    category: 'RLS',
+    name: '⭐ Row Level Security – Official Docs',
+    link: 'https://www.postgresql.org/docs/current/ddl-rowsecurity.html'
+  }, {
+    category: 'RLS – .NET',
+    name: '🆕 Implementing RLS with EF Core (blog)',
+    link: 'https://www.npgsql.org/efcore/misc/collations-and-case-sensitivity.html'
+  }, {
+    category: 'Partitioning',
+    name: '🆕 Table Partitioning – PostgreSQL Official',
+    link: 'https://www.postgresql.org/docs/current/ddl-partitioning.html'
+  }, {
+    category: 'Migration',
+    name: '⭐ 🆕 gh-ost – GitHub (Online Schema Change)',
+    link: 'https://github.com/github/gh-ost'
+  }, {
+    category: 'Migration',
+    name: '⭐ 🆕 Liquibase Documentation',
+    link: 'https://docs.liquibase.com/'
+  }, {
+    category: 'Migration Strategy',
+    name: '🆕 Backward-Compatible Migrations (PlanetScale Blog)',
+    link: 'https://planetscale.com/blog/backward-compatible-migrations'
+  }, {
+    category: 'Audit',
+    name: '⭐ 🆕 Audit Logging với PostgreSQL triggers + EF Core',
+    link: 'https://www.postgresql.org/docs/current/plpgsql-trigger.html'
+  }, {
+    category: 'Audit – .NET',
+    name: '🆕 Audit.NET – Library cho .NET',
+    link: 'https://github.com/thepirat000/Audit.NET'
   }]
 }, {
   id: "stage-5",
@@ -749,17 +973,69 @@ const STAGES = [{
   constraint: "Không có.",
   time: "4 tuần (Full-time) | 8 tuần (Part-time)",
   resources: [{
-    category: "Frontend",
-    name: "Next.js App Router",
-    link: "https://nextjs.org/docs"
+    category: 'Bridge – TypeScript',
+    name: '⭐ 🆕 TypeScript Handbook (Official)',
+    link: 'https://www.typescriptlang.org/docs/handbook/intro.html'
   }, {
-    category: "State",
-    name: "Zustand",
-    link: "https://github.com/pmndrs/zustand"
+    category: 'Bridge – React',
+    name: '🆕 React – Quick Start (Official Docs)',
+    link: 'https://react.dev/learn'
   }, {
-    category: "Testing",
-    name: "Playwright",
-    link: "https://playwright.dev"
+    category: 'Bridge – HTTP',
+    name: '🆕 HTTP Fundamentals – MDN',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview'
+  }, {
+    category: 'Next.js',
+    name: '⭐ 🆕 Next.js Official Documentation (App Router)',
+    link: 'https://nextjs.org/docs'
+  }, {
+    category: 'Next.js',
+    name: '🆕 Next.js by Example – Vercel Templates',
+    link: 'https://vercel.com/templates/next.js'
+  }, {
+    category: 'Next.js',
+    name: '🆕 Lee Robinson – Next.js App Router (YouTube)',
+    link: 'https://www.youtube.com/@leerob'
+  }, {
+    category: 'Data Fetching',
+    name: '⭐ 🆕 TanStack Query (React Query) Documentation',
+    link: 'https://tanstack.com/query/latest'
+  }, {
+    category: 'State',
+    name: '🆕 Zustand Documentation',
+    link: 'https://docs.pmnd.rs/zustand/getting-started/introduction'
+  }, {
+    category: 'Type-safe API',
+    name: '⭐ 🆕 tRPC Documentation',
+    link: 'https://trpc.io/docs'
+  }, {
+    category: 'Styling',
+    name: '⭐ 🆕 Tailwind CSS Documentation',
+    link: 'https://tailwindcss.com/docs'
+  }, {
+    category: 'UI Library',
+    name: '🆕 shadcn/ui – Component Library',
+    link: 'https://ui.shadcn.com/'
+  }, {
+    category: 'Charts',
+    name: '🆕 Recharts Documentation',
+    link: 'https://recharts.org/en-US/'
+  }, {
+    category: 'Auth',
+    name: '⭐ 🆕 NextAuth.js v5 (Auth.js) Documentation',
+    link: 'https://authjs.dev/'
+  }, {
+    category: 'Testing',
+    name: '⭐ 🆕 Playwright – E2E Testing',
+    link: 'https://playwright.dev/docs/intro'
+  }, {
+    category: 'Testing',
+    name: '🆕 Vitest Documentation',
+    link: 'https://vitest.dev/'
+  }, {
+    category: 'Deployment',
+    name: '⭐ 🆕 Vercel Deployment Documentation',
+    link: 'https://vercel.com/docs'
   }]
 }, {
   id: "stage-6",
@@ -780,17 +1056,69 @@ const STAGES = [{
   maintenance: "⏳ Bảo trì 2 tháng → viết Maintenance Retrospective.",
   time: "10 tuần (Full-time) | 20 tuần (Part-time)",
   resources: [{
-    category: "K8s",
-    name: "Kubernetes Docs",
-    link: "https://kubernetes.io/"
+    category: 'Bridge – Linux',
+    name: '⭐ 🆕 The Linux Command Line (William Shotts – free online)',
+    link: 'https://linuxcommand.org/tlcl.php'
   }, {
-    category: "Observability",
-    name: "Prometheus",
-    link: "https://prometheus.io/"
+    category: 'Bridge – Networking',
+    name: '🆕 Computer Networking: A Top-Down Approach (Kurose & Ross)',
+    link: 'https://gaia.cs.umass.edu/kurose_ross/'
   }, {
-    category: "Chaos",
-    name: "Chaos Mesh",
-    link: "https://chaos-mesh.org/"
+    category: 'Bridge – Docker',
+    name: '⭐ 🆕 Docker in Practice (Manning)',
+    link: 'https://www.manning.com/books/docker-in-practice-second-edition'
+  }, {
+    category: 'K8s',
+    name: '⭐ 🆕 Kubernetes Official Documentation – Concepts',
+    link: 'https://kubernetes.io/docs/concepts/'
+  }, {
+    category: 'K8s',
+    name: '🆕 Kubernetes The Hard Way (Kelsey Hightower)',
+    link: 'https://github.com/kelseyhightower/kubernetes-the-hard-way'
+  }, {
+    category: 'K8s Practice',
+    name: '⭐ 🆕 CKAD Practice Labs (GitHub)',
+    link: 'https://github.com/dgkanatsios/CKAD-exercises'
+  }, {
+    category: 'Helm',
+    name: '🆕 Helm Documentation',
+    link: 'https://helm.sh/docs/'
+  }, {
+    category: 'CI/CD',
+    name: '⭐ 🆕 GitHub Actions Documentation',
+    link: 'https://docs.github.com/en/actions'
+  }, {
+    category: 'GitOps',
+    name: '🆕 ArgoCD Documentation',
+    link: 'https://argo-cd.readthedocs.io/en/stable/'
+  }, {
+    category: 'Metrics',
+    name: '⭐ 🆕 Prometheus Documentation',
+    link: 'https://prometheus.io/docs/introduction/overview/'
+  }, {
+    category: 'Visualization',
+    name: '⭐ 🆕 Grafana Documentation',
+    link: 'https://grafana.com/docs/grafana/latest/'
+  }, {
+    category: 'Logs',
+    name: '🆕 Grafana Loki Documentation',
+    link: 'https://grafana.com/docs/loki/latest/'
+  }, {
+    category: 'Tracing',
+    name: '⭐ 🆕 Jaeger Tracing Documentation',
+    link: 'https://www.jaegertracing.io/docs/'
+  }, {
+    category: 'SRE',
+    name: '⭐ 🆕 Site Reliability Engineering (Google SRE Book – free)',
+    link: 'https://sre.google/sre-book/table-of-contents/'
+  }, {
+    category: 'SRE',
+    name: '🆕 The Site Reliability Workbook (Google – free)',
+    link: 'https://sre.google/workbook/table-of-contents/'
+  }, {
+    category: 'Incident',
+    name: '🆕 PagerDuty – Incident Response Documentation',
+    link: 'https://response.pagerduty.com/'
   }]
 }, {
   id: "stage-f4",
@@ -848,13 +1176,73 @@ const STAGES = [{
   constraint: "Không có.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: "RAG",
-    name: "RAG from Scratch",
-    link: "https://github.com"
+    category: 'Bridge – Python',
+    name: '⭐ 🆕 Python Official Tutorial (docs.python.org)',
+    link: 'https://docs.python.org/3/tutorial/'
   }, {
-    category: "Vector DB",
-    name: "pgvector Docs",
-    link: "https://github.com/pgvector/pgvector"
+    category: 'Bridge – AI Concepts',
+    name: '🆕 Fast.ai – Practical Deep Learning for Coders (free)',
+    link: 'https://course.fast.ai/'
+  }, {
+    category: 'Bridge – LLM Basics',
+    name: '⭐ 🆕 Andrej Karpathy – Intro to Large Language Models (YouTube)',
+    link: 'https://www.youtube.com/watch?v=zjkBMFhNj_g'
+  }, {
+    category: 'LLM API',
+    name: '⭐ 🆕 OpenAI API Documentation',
+    link: 'https://platform.openai.com/docs/'
+  }, {
+    category: 'LLM API',
+    name: '🆕 Anthropic Claude API Documentation',
+    link: 'https://docs.anthropic.com/en/api/'
+  }, {
+    category: 'Prompt Engineering',
+    name: '⭐ 🆕 Anthropic Prompt Engineering Guide',
+    link: 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview'
+  }, {
+    category: 'RAG',
+    name: '⭐ 🆕 LangChain Documentation – RAG',
+    link: 'https://python.langchain.com/docs/tutorials/rag/'
+  }, {
+    category: 'RAG – .NET',
+    name: '⭐ 🆕 Microsoft Semantic Kernel Documentation',
+    link: 'https://learn.microsoft.com/en-us/semantic-kernel/overview/'
+  }, {
+    category: 'Embeddings',
+    name: '🆕 OpenAI Embeddings Guide',
+    link: 'https://platform.openai.com/docs/guides/embeddings'
+  }, {
+    category: 'Vector DB – PostgreSQL',
+    name: '⭐ 🆕 pgvector – GitHub',
+    link: 'https://github.com/pgvector/pgvector'
+  }, {
+    category: 'Vector DB',
+    name: '🆕 Qdrant Documentation',
+    link: 'https://qdrant.tech/documentation/'
+  }, {
+    category: 'Vector DB',
+    name: '🆕 Pinecone Documentation',
+    link: 'https://docs.pinecone.io/'
+  }, {
+    category: 'Chunking',
+    name: '⭐ 🆕 Advanced RAG – Chunking Strategies (Pinecone Blog)',
+    link: 'https://www.pinecone.io/learn/chunking-strategies/'
+  }, {
+    category: 'Reranking',
+    name: '🆕 Cohere Rerank Documentation',
+    link: 'https://docs.cohere.com/v2/docs/reranking'
+  }, {
+    category: 'Evaluation',
+    name: '⭐ 🆕 RAGAS – RAG Evaluation Framework',
+    link: 'https://docs.ragas.io/'
+  }, {
+    category: 'Observability',
+    name: '⭐ 🆕 LangSmith Documentation (LangChain tracing)',
+    link: 'https://docs.smith.langchain.com/'
+  }, {
+    category: 'Cost',
+    name: '🆕 OpenAI Cookbook – Cost Optimization',
+    link: 'https://cookbook.openai.com/'
   }]
 }, {
   id: "stage-8",
@@ -874,13 +1262,61 @@ const STAGES = [{
   constraint: "Không có.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: "Identity",
-    name: "Keycloak Docs",
-    link: "https://www.keycloak.org/"
+    category: 'Bridge – Cryptography',
+    name: '⭐ 🆕 Crypto 101 (free ebook)',
+    link: 'https://www.crypto101.io/'
   }, {
-    category: "OAuth2",
-    name: "OAuth 2.0 Simplified",
-    link: "https://oauth.net/2/"
+    category: 'Bridge – HTTP Security',
+    name: '🆕 MDN – HTTP Security Headers',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security'
+  }, {
+    category: 'OAuth2',
+    name: '⭐ 🆕 OAuth 2.0 Simplified (Aaron Parecki – free online)',
+    link: 'https://www.oauth.com/'
+  }, {
+    category: 'OAuth2',
+    name: '⭐ 🆕 OAuth2 Security Best Current Practice (RFC 9700)',
+    link: 'https://datatracker.ietf.org/doc/html/rfc9700'
+  }, {
+    category: 'OIDC',
+    name: '🆕 OpenID Connect Core 1.0 Specification',
+    link: 'https://openid.net/specs/openid-connect-core-1_0.html'
+  }, {
+    category: 'PKCE',
+    name: '🆕 Auth0 – What is PKCE? (blog)',
+    link: 'https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce'
+  }, {
+    category: 'Auth Server',
+    name: '⭐ 🆕 Keycloak Documentation',
+    link: 'https://www.keycloak.org/documentation'
+  }, {
+    category: 'Auth Server',
+    name: '🆕 Duende IdentityServer Documentation',
+    link: 'https://docs.duendesoftware.com/identityserver/v7/'
+  }, {
+    category: 'Auth Server',
+    name: '🆕 Auth0 Documentation',
+    link: 'https://auth0.com/docs'
+  }, {
+    category: 'JWT',
+    name: '⭐ 🆕 JWT Introduction (jwt.io)',
+    link: 'https://jwt.io/introduction'
+  }, {
+    category: 'JWT Security',
+    name: '🆕 JWT Security Best Practices (Okta Blog)',
+    link: 'https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc'
+  }, {
+    category: 'JWT – .NET',
+    name: '⭐ 🆕 ASP.NET Core JWT Bearer Authentication (Microsoft Docs)',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/jwt-authn'
+  }, {
+    category: 'Scalability',
+    name: '⭐ 🆕 System Design – URL Shortener (ByteByteGo)',
+    link: 'https://bytebytego.com/courses/system-design-interview/design-a-url-shortener'
+  }, {
+    category: 'Analytics',
+    name: '🆕 ClickHouse – Fast Analytics DB',
+    link: 'https://clickhouse.com/docs/en/intro'
   }]
 }, {
   id: "stage-9",
@@ -900,13 +1336,61 @@ const STAGES = [{
   constraint: "💰 Budget $300/tháng → bỏ một region.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: "Flags",
-    name: "LaunchDarkly Docs",
-    link: "https://docs.launchdarkly.com"
+    category: 'Bridge – DNS & CDN',
+    name: '⭐ 🆕 How DNS Works (Cloudflare Blog)',
+    link: 'https://www.cloudflare.com/learning/dns/what-is-dns/'
   }, {
-    category: "Database",
-    name: "PostgreSQL Replication",
-    link: "https://www.postgresql.org/"
+    category: 'Bridge – CDN',
+    name: '🆕 What is a CDN? (Cloudflare Learning)',
+    link: 'https://www.cloudflare.com/learning/cdn/what-is-a-cdn/'
+  }, {
+    category: 'Bridge – Geo-distribution',
+    name: '⭐ 🆕 CAP Theorem Revisited (Martin Kleppmann paper)',
+    link: 'https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html'
+  }, {
+    category: 'Feature Flags',
+    name: '⭐ 🆕 OpenFeature Specification (CNCF Standard)',
+    link: 'https://openfeature.dev/docs/reference/intro/'
+  }, {
+    category: 'Feature Flags',
+    name: '⭐ 🆕 Unleash – Open Source Feature Flag Platform',
+    link: 'https://docs.getunleash.io/'
+  }, {
+    category: 'Feature Flags',
+    name: '🆕 LaunchDarkly Documentation',
+    link: 'https://docs.launchdarkly.com/'
+  }, {
+    category: 'Feature Flags – .NET',
+    name: '🆕 Microsoft.FeatureManagement Documentation',
+    link: 'https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-feature-flags-dotnet-core'
+  }, {
+    category: 'Replication',
+    name: '⭐ 🆕 PostgreSQL Streaming Replication (Official Docs)',
+    link: 'https://www.postgresql.org/docs/current/warm-standby.html'
+  }, {
+    category: 'Replication',
+    name: '🆕 Citus – Distributed PostgreSQL',
+    link: 'https://docs.citusdata.com/'
+  }, {
+    category: 'Multi-Region',
+    name: '⭐ 🆕 Fly.io Multi-Region Documentation',
+    link: 'https://fly.io/docs/reference/regions/'
+  }, {
+    category: 'Multi-Region',
+    name: '🆕 Cloudflare Workers Documentation',
+    link: 'https://developers.cloudflare.com/workers/'
+  }, {
+    category: 'Multi-Region',
+    name: '🆕 AWS Global Accelerator Documentation',
+    link: 'https://docs.aws.amazon.com/global-accelerator/'
+  }, {
+    category: 'Consistency',
+    name: '⭐ 🆕 DDIA – Chapter 5: Replication (Kleppmann)',
+    link: 'https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/'
+  }, {
+    category: 'CRDTs',
+    name: '🆕 CRDT Explainer (Conflict-free Replicated Data Types)',
+    link: 'https://crdt.tech/'
   }]
 }, {
   id: "stage-10",
@@ -927,13 +1411,65 @@ const STAGES = [{
   maintenance: "⏳ Bảo trì 3 tháng → viết Maintenance Retrospective.",
   time: "8 tuần (Full-time) | 16 tuần (Part-time)",
   resources: [{
-    category: "Pattern",
-    name: "Strangler Fig (Fowler)",
-    link: "https://martinfowler.com"
+    category: 'Bridge – Testing Legacy',
+    name: '⭐ 🆕 Working Effectively with Legacy Code – Michael Feathers',
+    link: 'https://www.oreilly.com/library/view/working-effectively-with/0131177052/'
   }, {
-    category: "Book",
-    name: "Working Effectively with Legacy Code",
-    link: "https://github.com"
+    category: 'Bridge – Characterization Tests',
+    name: '🆕 Characterization Testing (Martin Fowler Bliki)',
+    link: 'https://martinfowler.com/bliki/CharacterizationTest.html'
+  }, {
+    category: 'Patterns',
+    name: '⭐ 🆕 Strangler Fig Application (Martin Fowler) – đọc lại Stage 3',
+    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html'
+  }, {
+    category: 'Patterns',
+    name: '🆕 Anti-Corruption Layer Pattern',
+    link: 'https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer'
+  }, {
+    category: 'Patterns',
+    name: '⭐ 🆕 Branch by Abstraction (Martin Fowler)',
+    link: 'https://martinfowler.com/bliki/BranchByAbstraction.html'
+  }, {
+    category: 'Anti-patterns',
+    name: '🆕 Big Ball of Mud (Brian Foote & Joseph Yoder paper)',
+    link: 'http://www.laputan.org/mud/'
+  }, {
+    category: 'DB Migration',
+    name: '⭐ 🆕 Evolutionary Database Design (Martin Fowler & Pramod Sadalage)',
+    link: 'https://martinfowler.com/articles/evodb.html'
+  }, {
+    category: 'DB Migration',
+    name: '🆕 Expand/Contract Pattern for Zero-Downtime DB Migration',
+    link: 'https://www.prisma.io/dataguide/types/relational/expand-and-contract-pattern'
+  }, {
+    category: 'DB Migration',
+    name: '🆕 Flyway vs Liquibase Comparison',
+    link: 'https://www.baeldung.com/flyway-vs-liquibase'
+  }, {
+    category: 'Refactoring',
+    name: '⭐ 🆕 Refactoring – Martin Fowler (2nd Edition)',
+    link: 'https://refactoring.com/'
+  }, {
+    category: 'Refactoring',
+    name: '🆕 Refactoring Guru – Design Patterns + Refactoring',
+    link: 'https://refactoring.guru/'
+  }, {
+    category: 'Event Sourcing',
+    name: '⭐ 🆕 Event Sourcing (Martin Fowler)',
+    link: 'https://martinfowler.com/eaaDev/EventSourcing.html'
+  }, {
+    category: 'Event Sourcing – .NET',
+    name: '🆕 Marten – Event Store for PostgreSQL (.NET)',
+    link: 'https://martendb.io/'
+  }, {
+    category: 'ADR',
+    name: '⭐ 🆕 Architecture Decision Records (Michael Nygard)',
+    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions'
+  }, {
+    category: 'ADR Tools',
+    name: '🆕 ADR Tools (GitHub – npryce)',
+    link: 'https://github.com/npryce/adr-tools'
   }]
 }, {
   id: "stage-11",
@@ -953,13 +1489,65 @@ const STAGES = [{
   constraint: "🧠 Strong consistency chỉ dùng CRDT.",
   time: "8 tuần (Full-time) | 16 tuần (Part-time)",
   resources: [{
-    category: "Book",
-    name: "Designing Data-Intensive Apps",
-    link: "https://dataintensive.net/"
+    category: 'Bridge – Math',
+    name: '⭐ 🆕 Discrete Mathematics and Its Applications – Kenneth Rosen',
+    link: 'https://www.mheducation.com/highered/product/discrete-mathematics-applications-rosen/M9781260091991.html'
   }, {
-    category: "Theory",
-    name: "Raft Website",
-    link: "https://raft.github.io/"
+    category: 'Bridge – Probability',
+    name: '🆕 Introduction to Probability – Blitzstein & Hwang (free PDF)',
+    link: 'https://projects.iq.harvard.edu/stat110/home'
+  }, {
+    category: 'Core Textbook',
+    name: '⭐ 🆕 Designing Data-Intensive Applications – Martin Kleppmann',
+    link: 'https://dataintensive.net/'
+  }, {
+    category: 'Core Textbook',
+    name: '🆕 Distributed Systems – Maarten van Steen & Andrew Tanenbaum (free PDF)',
+    link: 'https://www.distributed-systems.net/'
+  }, {
+    category: 'Foundations',
+    name: '⭐ 🆕 MIT 6.824: Distributed Systems (Labs + Videos – free)',
+    link: 'https://pdos.csail.mit.edu/6.824/'
+  }, {
+    category: 'Raft',
+    name: '⭐ 🆕 Raft Consensus Algorithm – The Raft Paper',
+    link: 'https://raft.github.io/raft.pdf'
+  }, {
+    category: 'Raft',
+    name: '🆕 The Raft Interactive Visualization',
+    link: 'https://raft.github.io/'
+  }, {
+    category: 'Paxos',
+    name: '🆕 Paxos Made Simple – Leslie Lamport',
+    link: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf'
+  }, {
+    category: 'Clocks',
+    name: '⭐ 🆕 Time, Clocks, and the Ordering of Events – Lamport (1978 paper)',
+    link: 'https://lamport.azurewebsites.net/pubs/time-clocks.pdf'
+  }, {
+    category: 'Vector Clocks',
+    name: '🆕 Why Vector Clocks Are Hard (Riak Blog)',
+    link: 'https://riak.com/posts/technical/why-vector-clocks-are-hard/'
+  }, {
+    category: 'Failure Models',
+    name: '⭐ 🆕 Fallacies of Distributed Computing (Peter Deutsch)',
+    link: 'https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing'
+  }, {
+    category: 'FLP',
+    name: '🆕 FLP Impossibility – Explained (Paper + Blog)',
+    link: 'https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/'
+  }, {
+    category: 'Byzantine',
+    name: '🆕 Byzantine Fault Tolerance – Practical BFT (pBFT) Summary',
+    link: 'https://pmg.csail.mit.edu/papers/osdi99.pdf'
+  }, {
+    category: 'CRDTs',
+    name: '⭐ 🆕 A Comprehensive Study of CRDTs (paper)',
+    link: 'https://hal.inria.fr/inria-00555588/document'
+  }, {
+    category: 'Consistency Models',
+    name: '🆕 Jepsen – Consistency Models (Kyle Kingsbury)',
+    link: 'https://jepsen.io/consistency'
   }]
 }, {
   id: "stage-12",
@@ -979,17 +1567,65 @@ const STAGES = [{
   constraint: "💰 Security budget = $0 → chỉ dùng miễn phí.",
   time: "8 tuần (Full-time) | 16 tuần (Part-time)",
   resources: [{
-    category: "Guidelines",
-    name: "OWASP Top 10",
-    link: "https://owasp.org/"
+    category: 'Bridge – Networking Security',
+    name: '⭐ 🆕 Computer Networking: A Top-Down Approach – Security Chapters',
+    link: 'https://gaia.cs.umass.edu/kurose_ross/'
   }, {
-    category: "Secrets",
-    name: "HashiCorp Vault",
-    link: "https://vaultproject.io"
+    category: 'Bridge – Cryptography',
+    name: '🆕 Crypto101 (nâng cao từ Stage 8)',
+    link: 'https://www.crypto101.io/'
   }, {
-    category: "Runtime",
-    name: "Falco",
-    link: "https://falco.org/"
+    category: 'OWASP',
+    name: '⭐ 🆕 OWASP Top 10 (2021)',
+    link: 'https://owasp.org/www-project-top-ten/'
+  }, {
+    category: 'OWASP',
+    name: '🆕 OWASP .NET Security Cheat Sheet',
+    link: 'https://cheatsheetseries.owasp.org/cheatsheets/DotNet_Security_Cheat_Sheet.html'
+  }, {
+    category: 'SQLi/XSS',
+    name: '⭐ 🆕 PortSwigger Web Security Academy (free labs)',
+    link: 'https://portswigger.net/web-security'
+  }, {
+    category: 'Threat Modeling',
+    name: '⭐ 🆕 Threat Modeling – Adam Shostack (sách)',
+    link: 'https://www.threatmodelingbook.com/'
+  }, {
+    category: 'Threat Modeling',
+    name: '🆕 Microsoft Threat Modeling Tool',
+    link: 'https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool'
+  }, {
+    category: 'Secrets',
+    name: '⭐ 🆕 HashiCorp Vault Documentation',
+    link: 'https://developer.hashicorp.com/vault/docs'
+  }, {
+    category: 'Secrets – .NET',
+    name: '🆕 ASP.NET Core Data Protection API',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/data-protection/'
+  }, {
+    category: 'mTLS',
+    name: '⭐ 🆕 Mutual TLS Explained (Cloudflare)',
+    link: 'https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/'
+  }, {
+    category: 'SAST',
+    name: '⭐ 🆕 SonarQube Security Rules for C#',
+    link: 'https://rules.sonarsource.com/csharp/'
+  }, {
+    category: 'Dependency Scan',
+    name: '🆕 OWASP Dependency-Check',
+    link: 'https://owasp.org/www-project-dependency-check/'
+  }, {
+    category: 'Penetration Testing',
+    name: '⭐ 🆕 HackTheBox / TryHackMe (free tiers)',
+    link: 'https://www.hackthebox.com/'
+  }, {
+    category: 'Zero Trust',
+    name: '⭐ 🆕 Zero Trust Architecture – NIST SP 800-207',
+    link: 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf'
+  }, {
+    category: 'Supply Chain',
+    name: '🆕 SLSA Framework (Supply Chain Levels for Software Artifacts)',
+    link: 'https://slsa.dev/'
   }]
 }, {
   id: "stage-13",
@@ -1009,13 +1645,65 @@ const STAGES = [{
   constraint: "⏱️ Chỉ 2 tuần fix performance.",
   time: "12 tuần (Full-time) | 24 tuần (Part-time)",
   resources: [{
-    category: "Profiling",
-    name: "Linux Perf Docs",
-    link: "https://perf.wiki.kernel.org"
+    category: 'Bridge – C Language',
+    name: '⭐ 🆕 The C Programming Language – K&R (Kernighan & Ritchie)',
+    link: 'https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628'
   }, {
-    category: "Book",
-    name: "Pro .NET Memory Management",
-    link: "https://book.com"
+    category: 'Bridge – Assembly',
+    name: '🆕 x86 Assembly Language and C Fundamentals – Cavanagh',
+    link: 'https://www.amazon.com/x86-Assembly-Language-Fundamentals-Cavanagh/dp/1466568240'
+  }, {
+    category: 'OS',
+    name: '⭐ 🆕 Operating Systems: Three Easy Pieces (OSTEP – free online)',
+    link: 'https://pages.cs.wisc.edu/~remzi/OSTEP/'
+  }, {
+    category: 'OS',
+    name: '🆕 Linux Kernel Development – Robert Love',
+    link: 'https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468'
+  }, {
+    category: 'OS – Practice',
+    name: '🆕 xv6 – MIT Teaching OS (with labs)',
+    link: 'https://pdos.csail.mit.edu/6.S081/2021/'
+  }, {
+    category: 'Memory',
+    name: '⭐ 🆕 What Every Programmer Should Know About Memory – Drepper',
+    link: 'https://people.freebsd.org/~lstewart/articles/cpumemory.pdf'
+  }, {
+    category: 'GC – .NET',
+    name: '⭐ 🆕 CLR via C# – Jeffrey Richter (Chapter: GC)',
+    link: 'https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454'
+  }, {
+    category: 'GC – Tools',
+    name: '🆕 PerfView Documentation (Microsoft)',
+    link: 'https://github.com/microsoft/perfview'
+  }, {
+    category: 'TCP/IP',
+    name: '⭐ 🆕 TCP/IP Illustrated Vol.1 – W. Richard Stevens',
+    link: 'https://www.amazon.com/TCP-Illustrated-Protocols-Addison-Wesley-Professional/dp/0321336313'
+  }, {
+    category: 'HTTP/2 + QUIC',
+    name: '🆕 HTTP/2 Explained (Daniel Stenberg)',
+    link: 'https://http2-explained.haxx.se/'
+  }, {
+    category: 'CPU',
+    name: '⭐ 🆕 Computer Organization and Design – Patterson & Hennessy',
+    link: 'https://www.amazon.com/Computer-Organization-Design-RISC-V-Architecture/dp/0128203315'
+  }, {
+    category: 'Profiling',
+    name: '⭐ 🆕 BenchmarkDotNet Documentation',
+    link: 'https://benchmarkdotnet.org/articles/overview.html'
+  }, {
+    category: 'Profiling',
+    name: '🆕 dotTrace / dotMemory (JetBrains)',
+    link: 'https://www.jetbrains.com/profiler/'
+  }, {
+    category: 'Compiler',
+    name: '⭐ 🆕 Crafting Interpreters – Robert Nystrom (free online)',
+    link: 'https://craftinginterpreters.com/'
+  }, {
+    category: 'JIT – .NET',
+    name: '🆕 How the .NET JIT Works (Stephen Toub – Microsoft Blog)',
+    link: 'https://devblogs.microsoft.com/dotnet/'
   }]
 }, {
   id: "stage-14",
@@ -1035,13 +1723,61 @@ const STAGES = [{
   constraint: "💰 Budget $30/tháng, team 1 người.",
   time: "4 tuần (Full-time) | 8 tuần (Part-time)",
   resources: [{
-    category: "DB",
-    name: "SQLite Docs",
-    link: "https://sqlite.org/"
+    category: 'Bridge – Philosophy',
+    name: '⭐ 🆕 Simple Made Easy – Rich Hickey (Strange Loop 2011 talk)',
+    link: 'https://www.infoq.com/presentations/Simple-Made-Easy/'
   }, {
-    category: "Monolith",
-    name: "The Majestic Monolith",
-    link: "https://martinfowler.com"
+    category: 'Bridge – Thinking',
+    name: '🆕 A Philosophy of Software Design – John Ousterhout',
+    link: 'https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201'
+  }, {
+    category: 'YAGNI/KISS',
+    name: '⭐ 🆕 Martin Fowler – YAGNI (bliki)',
+    link: 'https://martinfowler.com/bliki/Yagni.html'
+  }, {
+    category: 'YAGNI/KISS',
+    name: '🆕 The Zen of Python applied to Software Design',
+    link: 'https://peps.python.org/pep-0020/'
+  }, {
+    category: 'DRY',
+    name: '🆕 Don\'t Repeat Yourself – Pragmatic Programmer',
+    link: 'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052'
+  }, {
+    category: 'Tech Debt',
+    name: '⭐ 🆕 Technical Debt Quadrant – Martin Fowler',
+    link: 'https://martinfowler.com/bliki/TechnicalDebtQuadrant.html'
+  }, {
+    category: 'Tech Debt',
+    name: '🆕 Managing Technical Debt – Kruchten, Nord & Ozkaya',
+    link: 'https://www.oreilly.com/library/view/managing-technical-debt/9780135646052/'
+  }, {
+    category: 'ADR',
+    name: '⭐ 🆕 Documenting Architecture Decisions (Nygard – từ Stage X)',
+    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions'
+  }, {
+    category: 'Documentation',
+    name: '⭐ 🆕 Diátaxis Documentation Framework',
+    link: 'https://diataxis.fr/'
+  }, {
+    category: 'Documentation',
+    name: '🆕 The C4 Model for Visualising Software Architecture',
+    link: 'https://c4model.com/'
+  }, {
+    category: 'Refactoring',
+    name: '⭐ 🆕 Kill It With Fire – Managing Aging Computer Systems (Marianne Bellotti)',
+    link: 'https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188'
+  }, {
+    category: 'Patterns',
+    name: '🆕 Replace Complex Conditional with Polymorphism (Refactoring Guru)',
+    link: 'https://refactoring.guru/replace-conditional-with-polymorphism'
+  }, {
+    category: 'Thinking',
+    name: '⭐ 🆕 The Pragmatic Programmer (20th Anniversary Edition)',
+    link: 'https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/'
+  }, {
+    category: 'Thinking',
+    name: '⭐ 🆕 Tidy First? – Kent Beck',
+    link: 'https://www.oreilly.com/library/view/tidy-first/9781098151232/'
   }]
 }];
 
@@ -2115,51 +2851,340 @@ function App() {
     }
   }, []);
 
-  // Supabase init + realtime chat
+  // ── SUPABASE INIT + FULL REALTIME SYNC ──────────────────
   useEffect(() => {
     const tryInit = () => {
-      if (window.supabase && window.supabase.createClient) {
-        const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        setSupabase(sb);
-
-        // Load existing chat messages
-        sb.from('chat').select('*').order('timestamp', {
-          ascending: true
-        }).then(({
-          data
-        }) => {
-          if (data) setChatMessages(data.map(m => ({
-            id: m.id,
-            text: m.text,
-            sender: m.sender,
-            role: m.role,
-            timestamp: m.timestamp
-          })));
-          setChatLoading(false);
-        });
-
-        // Subscribe to new messages in realtime
-        const channel = sb.channel('chat_room').on('postgres_changes', {
-          event: 'INSERT',
-          schema: 'public',
-          table: 'chat'
-        }, payload => {
-          const m = payload.new;
-          setChatMessages(prev => {
-            if (prev.find(x => x.id === m.id)) return prev;
-            return [...prev, {
-              id: m.id,
-              text: m.text,
-              sender: m.sender,
-              role: m.role,
-              timestamp: m.timestamp
-            }];
-          });
-        }).subscribe();
-        return () => sb.removeChannel(channel);
-      } else {
+      if (!window.supabase || !window.supabase.createClient) {
         setTimeout(tryInit, 200);
+        return;
       }
+      const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      setSupabase(sb);
+
+      // ── LOAD ALL DATA FROM SUPABASE ─────────────────────
+      const loadAll = async () => {
+        try {
+          var _prog$data, _tsk$data, _rep$data, _disc$data, _tim$data, _tech$data, _idea$data, _chk$data;
+          const [prog, tsk, rep, msg, disc, tim, tech, idea, chk] = await Promise.all([sb.from('study_progress').select('*'), sb.from('kanban_tasks').select('*').order('timestamp', {
+            ascending: false
+          }), sb.from('reports').select('*').order('timestamp', {
+            ascending: false
+          }), sb.from('chat').select('*').order('timestamp', {
+            ascending: true
+          }), sb.from('discoveries').select('*').order('timestamp', {
+            ascending: false
+          }), sb.from('stage_timers').select('*'), sb.from('custom_tech').select('*').order('timestamp', {
+            ascending: false
+          }), sb.from('ideation').select('*').order('timestamp', {
+            ascending: false
+          }), sb.from('stage_checklists').select('*').order('timestamp', {
+            ascending: true
+          })]);
+          if ((_prog$data = prog.data) !== null && _prog$data !== void 0 && _prog$data.length) {
+            const p = {};
+            prog.data.forEach(r => {
+              p[r.id] = {
+                'Partner A': r.partner_a,
+                'Partner B': r.partner_b
+              };
+            });
+            setStudyProgress(p);
+            ls.set('progress', p);
+          }
+          if ((_tsk$data = tsk.data) !== null && _tsk$data !== void 0 && _tsk$data.length) {
+            const t = tsk.data.map(r => ({
+              id: r.id,
+              title: r.title,
+              assignee: r.assignee,
+              status: r.status,
+              stageId: r.stage_id,
+              createdBy: r.created_by,
+              timestamp: r.timestamp
+            }));
+            setTasks(t);
+            ls.set('tasks', t);
+          }
+          if ((_rep$data = rep.data) !== null && _rep$data !== void 0 && _rep$data.length) {
+            const r = rep.data.map(r => ({
+              id: r.id,
+              title: r.title,
+              text: r.text,
+              type: r.type,
+              stageId: r.stage_id,
+              stageName: r.stage_name,
+              author: r.author,
+              timestamp: r.timestamp
+            }));
+            setReports(r);
+            ls.set('reports', r);
+          }
+          if (msg.data) {
+            const m = msg.data.map(r => ({
+              id: r.id,
+              text: r.text,
+              sender: r.sender,
+              role: r.role,
+              timestamp: r.timestamp
+            }));
+            setChatMessages(m);
+          }
+          setChatLoading(false);
+          if ((_disc$data = disc.data) !== null && _disc$data !== void 0 && _disc$data.length) {
+            const d = disc.data.map(r => ({
+              id: r.id,
+              title: r.title,
+              link: r.link,
+              notes: r.notes,
+              author: r.author,
+              role: r.role,
+              timestamp: r.timestamp
+            }));
+            setDiscoveries(d);
+            ls.set('discoveries', d);
+          }
+          if ((_tim$data = tim.data) !== null && _tim$data !== void 0 && _tim$data.length) {
+            const t = {};
+            tim.data.forEach(r => {
+              t[r.id] = {
+                startTime: r.start_time,
+                startedBy: r.started_by
+              };
+            });
+            setStageTimers(t);
+            ls.set('timers', t);
+          }
+          if ((_tech$data = tech.data) !== null && _tech$data !== void 0 && _tech$data.length) {
+            const t = tech.data.map(r => ({
+              id: r.id,
+              stageId: r.stage_id,
+              name: r.name,
+              link: r.link,
+              addedBy: r.added_by,
+              timestamp: r.timestamp
+            }));
+            setCustomTech(t);
+            ls.set('tech', t);
+          }
+          if ((_idea$data = idea.data) !== null && _idea$data !== void 0 && _idea$data.length) {
+            const i = idea.data.map(r => ({
+              id: r.id,
+              title: r.title,
+              desc: r.description || '',
+              stage: r.stage,
+              status: r.status,
+              author: r.author,
+              timestamp: r.timestamp
+            }));
+            setIdeationList(i);
+            ls.set('ideation', i);
+          }
+          if ((_chk$data = chk.data) !== null && _chk$data !== void 0 && _chk$data.length) {
+            const c = {};
+            chk.data.forEach(r => {
+              if (!c[r.stage_id]) c[r.stage_id] = [];
+              c[r.stage_id].push({
+                id: r.id,
+                text: r.text,
+                doneA: r.done_a,
+                doneB: r.done_b,
+                author: r.author,
+                ts: r.timestamp
+              });
+            });
+            setStageChecklists(c);
+            ls.set('checklists', c);
+          }
+        } catch (e) {
+          console.warn('Load failed:', e);
+          setChatLoading(false);
+        }
+      };
+      loadAll();
+
+      // ── REALTIME SUBSCRIPTIONS ──────────────────────────
+      const channel = sb.channel('app_sync')
+      // tasks
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'kanban_tasks'
+      }, ({
+        eventType,
+        new: n,
+        old: o
+      }) => {
+        if (eventType === 'DELETE') setTasks(p => p.filter(t => t.id !== o.id));else setTasks(p => {
+          const mapped = {
+            id: n.id,
+            title: n.title,
+            assignee: n.assignee,
+            status: n.status,
+            stageId: n.stage_id,
+            createdBy: n.created_by,
+            timestamp: n.timestamp
+          };
+          const exists = p.find(t => t.id === n.id);
+          return exists ? p.map(t => t.id === n.id ? mapped : t) : [mapped, ...p];
+        });
+      })
+      // reports
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'reports'
+      }, ({
+        eventType,
+        new: n,
+        old: o
+      }) => {
+        if (eventType === 'DELETE') setReports(p => p.filter(r => r.id !== o.id));else setReports(p => {
+          const mapped = {
+            id: n.id,
+            title: n.title,
+            text: n.text,
+            type: n.type,
+            stageId: n.stage_id,
+            stageName: n.stage_name,
+            author: n.author,
+            timestamp: n.timestamp
+          };
+          const exists = p.find(r => r.id === n.id);
+          return exists ? p.map(r => r.id === n.id ? mapped : r) : [mapped, ...p];
+        });
+      })
+      // discoveries
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'discoveries'
+      }, ({
+        eventType,
+        new: n,
+        old: o
+      }) => {
+        if (eventType === 'DELETE') setDiscoveries(p => p.filter(d => d.id !== o.id));else setDiscoveries(p => {
+          const mapped = {
+            id: n.id,
+            title: n.title,
+            link: n.link,
+            notes: n.notes,
+            author: n.author,
+            role: n.role,
+            timestamp: n.timestamp
+          };
+          const exists = p.find(d => d.id === n.id);
+          return exists ? p.map(d => d.id === n.id ? mapped : d) : [mapped, ...p];
+        });
+      })
+      // study_progress
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'study_progress'
+      }, ({
+        new: n
+      }) => {
+        if (n) setStudyProgress(p => ({
+          ...p,
+          [n.id]: {
+            'Partner A': n.partner_a,
+            'Partner B': n.partner_b
+          }
+        }));
+      })
+      // ideation
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'ideation'
+      }, ({
+        eventType,
+        new: n,
+        old: o
+      }) => {
+        if (eventType === 'DELETE') setIdeationList(p => p.filter(i => i.id !== o.id));else setIdeationList(p => {
+          const mapped = {
+            id: n.id,
+            title: n.title,
+            desc: n.description || '',
+            stage: n.stage,
+            status: n.status,
+            author: n.author,
+            timestamp: n.timestamp
+          };
+          const exists = p.find(i => i.id === n.id);
+          return exists ? p.map(i => i.id === n.id ? mapped : i) : [mapped, ...p];
+        });
+      })
+      // stage_checklists
+      .on('postgres_changes', {
+        event: '*',
+        schema: 'public',
+        table: 'stage_checklists'
+      }, ({
+        eventType,
+        new: n,
+        old: o
+      }) => {
+        if (eventType === 'DELETE') {
+          setStageChecklists(p => {
+            const next = {
+              ...p
+            };
+            Object.keys(next).forEach(sid => {
+              next[sid] = next[sid].filter(i => i.id !== o.id);
+            });
+            return next;
+          });
+        } else {
+          setStageChecklists(p => {
+            const sid = n.stage_id;
+            const items = p[sid] || [];
+            const mapped = {
+              id: n.id,
+              text: n.text,
+              doneA: n.done_a,
+              doneB: n.done_b,
+              author: n.author,
+              ts: n.timestamp
+            };
+            const exists = items.find(i => i.id === n.id);
+            return {
+              ...p,
+              [sid]: exists ? items.map(i => i.id === n.id ? mapped : i) : [...items, mapped]
+            };
+          });
+        }
+      })
+      // chat
+      .on('postgres_changes', {
+        event: 'INSERT',
+        schema: 'public',
+        table: 'chat'
+      }, ({
+        new: n
+      }) => {
+        setChatMessages(prev => {
+          if (prev.find(x => x.id === n.id)) return prev;
+          return [...prev, {
+            id: n.id,
+            text: n.text,
+            sender: n.sender,
+            role: n.role,
+            timestamp: n.timestamp
+          }];
+        });
+      }).subscribe();
+
+      // ── REFETCH ON TAB FOCUS ────────────────────────────
+      const onFocus = () => {
+        if (navigator.onLine) loadAll();
+      };
+      window.addEventListener('focus', onFocus);
+      return () => {
+        sb.removeChannel(channel);
+        window.removeEventListener('focus', onFocus);
+      };
     };
     tryInit();
   }, []);

@@ -514,87 +514,108 @@ const STAGES = [{
   resources: [{
     category: 'C# cơ bản',
     name: 'Microsoft Learn – Học C#',
-    link: 'https://learn.microsoft.com/vi-vn/dotnet/csharp/'
+    link: 'https://learn.microsoft.com/vi-vn/dotnet/csharp/',
+    note: 'Học trước tiên. Bao gồm class, LINQ, async/await'
   }, {
     category: '.NET docs',
     name: 'Microsoft Learn – .NET documentation',
-    link: 'https://learn.microsoft.com/en-us/dotnet/'
+    link: 'https://learn.microsoft.com/en-us/dotnet/',
+    note: 'Dùng làm reference khi cần tra cứu'
   }, {
-    category: 'Roadmap tổng quan',
+    category: 'Roadmap',
     name: 'milanm/DotNet-Developer-Roadmap (GitHub)',
-    link: 'https://github.com/milanm/DotNet-Developer-Roadmap'
+    link: 'https://github.com/milanm/DotNet-Developer-Roadmap',
+    note: 'Xem sau khi đã hiểu cơ bản'
   }, {
-    category: 'Video tổng quan',
+    category: 'Video',
     name: 'The Ultimate .NET Developer Roadmap 2024 (YouTube)',
-    link: 'https://www.youtube.com/watch?v=7lSBgDMuAao'
+    link: 'https://www.youtube.com/watch?v=7lSBgDMuAao',
+    note: 'Xem trước để có bức tranh toàn cảnh (~30p)'
   }, {
     category: 'EF Core',
     name: '⭐ 🆕 EF Core – Getting Started (Microsoft)',
-    link: 'https://learn.microsoft.com/en-us/ef/core/get-started/'
+    link: 'https://learn.microsoft.com/en-us/ef/core/get-started/',
+    note: 'Bắt buộc trước khi dùng EF Core trong project'
   }, {
     category: 'EF Core',
     name: '🆕 EF Core – Code First Migrations',
-    link: 'https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/'
+    link: 'https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/',
+    note: 'Cần thiết để quản lý schema DB'
   }, {
     category: 'PostgreSQL',
     name: '⭐ 🆕 PostgreSQL Tutorial – Beginners',
-    link: 'https://www.postgresqltutorial.com/'
+    link: 'https://www.postgresqltutorial.com/',
+    note: 'Học cơ bản SQL & PostgreSQL trước khi kết nối EF Core'
   }, {
     category: 'Architecture',
-    name: 'Repository Pattern in ASP.NET Core (C# Corner)',
-    link: 'https://www.c-sharpcorner.com/article/repository-pattern-in-asp-net-core/'
+    name: 'Repository Pattern in ASP.NET Core',
+    link: 'https://www.c-sharpcorner.com/article/repository-pattern-in-asp-net-core/',
+    note: 'Đọc trước khi học Clean Architecture'
   }, {
     category: 'Architecture',
     name: 'How to Structure a .NET Solution That Actually Scales',
-    link: 'https://dev.to/'
+    link: 'https://dev.to/',
+    note: 'Thực chiến cấu trúc project'
   }, {
     category: 'Architecture',
     name: '⭐ ASP.NET Core 8 Clean Architecture (CQRS, MediatR, EF Core)',
-    link: 'https://github.com/jasontaylordev/CleanArchitecture'
+    link: 'https://github.com/jasontaylordev/CleanArchitecture',
+    note: 'Dự án mẫu – xem song song khi học Clean Arch'
   }, {
     category: 'DDD',
     name: 'Microsoft Learn – Domain-Driven Design',
-    link: 'https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis'
+    link: 'https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis',
+    note: 'Bắt đầu bằng bài này để có nền tảng DDD nhẹ'
   }, {
     category: 'DDD',
     name: 'ddd-crew/free-ddd-learning-resources (GitHub)',
-    link: 'https://github.com/ddd-crew/free-ddd-learning-resources'
+    link: 'https://github.com/ddd-crew/free-ddd-learning-resources',
+    note: 'Tổng hợp blog, video miễn phí'
   }, {
     category: 'DDD – sách',
-    name: 'Learning Domain-Driven Design – Vlad Khononov (O\'Reilly)',
-    link: 'https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/'
+    name: 'Learning DDD – Vlad Khononov (O\'Reilly)',
+    link: 'https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/',
+    note: 'Đọc trước Blue Book vì thực tế hơn'
   }, {
     category: 'DDD – mẫu code',
     name: '⭐ 🆕 eShopOnContainers (Microsoft) – DDD Aggregate mẫu',
-    link: 'https://github.com/dotnet-architecture/eShopOnContainers'
+    link: 'https://github.com/dotnet-architecture/eShopOnContainers',
+    note: 'Xem phần Order Aggregate'
   }, {
     category: 'Logging',
     name: '⭐ 🆕 Serilog Documentation',
-    link: 'https://serilog.net/'
+    link: 'https://serilog.net/',
+    note: 'Structured logging – cốt lõi của nhóm này'
   }, {
     category: 'Logging',
     name: '🆕 Correlation ID trong ASP.NET Core',
-    link: 'https://www.stevejgordon.co.uk/using-correlation-ids-in-asp-net-core-logging'
+    link: 'https://www.stevejgordon.co.uk/using-correlation-ids-in-asp-net-core-logging',
+    note: 'X-Request-ID bắt buộc theo Challenge #2'
   }, {
     category: 'Health Check',
     name: '🆕 Health Checks in ASP.NET Core (Microsoft)',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks'
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks',
+    note: 'Challenge #5 – Health checks endpoint'
   }, {
     category: 'Background Job',
     name: '⭐ 🆕 Hangfire Documentation',
-    link: 'https://docs.hangfire.io/'
+    link: 'https://docs.hangfire.io/',
+    note: 'Challenge #3 – Domain event → Hangfire email'
   }, {
     category: 'Cache',
     name: '🆕 Distributed Cache với Redis trong ASP.NET Core',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/performance/caching/distributed'
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/performance/caching/distributed',
+    note: 'Cần thiết trước Constraint Injection bỏ Redis'
   }, {
     category: 'Testing',
     name: '⭐ 🆕 xUnit.net Documentation',
-    link: 'https://xunit.net/'
+    link: 'https://xunit.net/',
+    note: 'Unit + Integration test framework'
   }, {
     category: 'Testing',
     name: '🆕 Testcontainers for .NET',
-    link: 'https://dotnet.testcontainers.org/'
+    link: 'https://dotnet.testcontainers.org/',
+    note: 'Test tích hợp với PostgreSQL thật trong container'
   }]
 }, {
   id: "stage-f1",
@@ -661,55 +682,68 @@ const STAGES = [{
   resources: [{
     category: 'Bridge',
     name: '⭐ 🆕 Modular Monolith with DDD – Kamil Grzybek',
-    link: 'https://github.com/kgrzybek/modular-monolith-with-ddd'
+    link: 'https://github.com/kgrzybek/modular-monolith-with-ddd',
+    note: 'Bắt buộc đọc README + kiến trúc trước khi code'
   }, {
     category: 'Bridge',
     name: '🆕 Jimmy Bogard – Domain-Driven Refactoring (NDC 2022)',
-    link: 'https://www.youtube.com/watch?v=f64tZ90Dntg'
+    link: 'https://www.youtube.com/watch?v=f64tZ90Dntg',
+    note: 'Video thực chiến tách module boundary từ monolith'
   }, {
     category: 'MediatR',
     name: '⭐ MediatR GitHub + Wiki',
-    link: 'https://github.com/jbogard/MediatR/wiki'
+    link: 'https://github.com/jbogard/MediatR/wiki',
+    note: 'Behaviors, Notifications – thay Domain Event in-process'
   }, {
     category: 'MediatR',
     name: '🆕 MediatR + Pipeline Behaviors (Jimmy Bogard blog)',
-    link: 'https://www.jimmybogard.com/sharing-context-in-mediatr-pipelines/'
+    link: 'https://www.jimmybogard.com/sharing-context-in-mediatr-pipelines/',
+    note: 'Implement Cross-cutting concerns'
   }, {
     category: 'Scrutor',
     name: '⭐ 🆕 Scrutor – GitHub',
-    link: 'https://github.com/khellang/Scrutor'
+    link: 'https://github.com/khellang/Scrutor',
+    note: 'Assembly scanning & decoration – auto-register modules'
   }, {
     category: 'Scrutor',
-    name: '🆕 Using Scrutor for Assembly Scanning in .NET (blog)',
-    link: 'https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/'
+    name: '🆕 Using Scrutor for Assembly Scanning in .NET (Andrew Lock)',
+    link: 'https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/',
+    note: 'Hướng dẫn thực tế'
   }, {
     category: 'Polly',
     name: '⭐ Polly Documentation',
-    link: 'https://github.com/App-vNext/Polly'
+    link: 'https://github.com/App-vNext/Polly',
+    note: 'Retry, Circuit Breaker, Fallback'
   }, {
     category: 'Polly',
-    name: '🆕 Microsoft Resilience with Polly (Microsoft.Extensions.Http.Resilience)',
-    link: 'https://learn.microsoft.com/en-us/dotnet/core/resilience/'
+    name: '🆕 .NET 8 built-in resilience (Microsoft.Extensions.Http.Resilience)',
+    link: 'https://learn.microsoft.com/en-us/dotnet/core/resilience/',
+    note: 'Kết hợp với Polly'
   }, {
     category: 'API Versioning',
     name: '⭐ API Versioning trong ASP.NET Core (Microsoft Learn)',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/web-api/'
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/web-api/',
+    note: 'Minimal API versioning + Header/Query versioning'
   }, {
     category: 'API Versioning',
     name: '🆕 Asp.Versioning.Http (NuGet) – Getting Started',
-    link: 'https://github.com/dotnet/aspnet-api-versioning/wiki'
+    link: 'https://github.com/dotnet/aspnet-api-versioning/wiki',
+    note: 'Package thực tế dùng trong project'
   }, {
     category: 'Contract Testing',
     name: '⭐ Pact Documentation',
-    link: 'https://docs.pact.io/'
+    link: 'https://docs.pact.io/',
+    note: 'Consumer-Driven Contract Testing giữa các module'
   }, {
     category: 'Background Job',
     name: 'Hangfire – Advanced (Recurring, Continuations, Batches)',
-    link: 'https://docs.hangfire.io/en/latest/'
+    link: 'https://docs.hangfire.io/en/latest/',
+    note: 'Nâng cao từ Stage 1: poison queue, retry policy'
   }, {
     category: 'Distributed Lock',
     name: '🆕 RedLock.net – GitHub',
-    link: 'https://github.com/samcook/RedLock.net'
+    link: 'https://github.com/samcook/RedLock.net',
+    note: 'Distributed lock với Redis – dùng trong Constraint Injection'
   }]
 }, {
   id: "stage-f2",
@@ -773,71 +807,88 @@ const STAGES = [{
   resources: [{
     category: 'Bridge – Docker',
     name: '⭐ 🆕 Docker Getting Started (Official)',
-    link: 'https://docs.docker.com/get-started/'
+    link: 'https://docs.docker.com/get-started/',
+    note: 'Bắt buộc – cần để chạy RabbitMQ, PostgreSQL local'
   }, {
     category: 'Bridge – Docker',
     name: '🆕 Docker Compose Overview',
-    link: 'https://docs.docker.com/compose/'
+    link: 'https://docs.docker.com/compose/',
+    note: 'Orchestrate RabbitMQ + DB + App trong dev'
   }, {
     category: 'Bridge – Concepts',
     name: '🆕 Martin Fowler – Microservices (concepts + CAP)',
-    link: 'https://martinfowler.com/articles/microservices.html'
+    link: 'https://martinfowler.com/articles/microservices.html',
+    note: 'Hiểu trade-off trước khi extract service'
   }, {
     category: 'Bridge – Patterns',
     name: '⭐ 🆕 Strangler Fig Pattern (Martin Fowler)',
-    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html'
+    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html',
+    note: 'Cách an toàn để extract Payment Service từ monolith'
   }, {
     category: 'Message Broker',
     name: '⭐ RabbitMQ Tutorials (Official)',
-    link: 'https://www.rabbitmq.com/tutorials'
+    link: 'https://www.rabbitmq.com/tutorials',
+    note: 'Học theo thứ tự 1→6'
   }, {
     category: 'MassTransit',
-    name: '⭐ 🆕 MassTransit Documentation (Official)',
-    link: 'https://masstransit.io/documentation/'
+    name: '⭐ 🆕 MassTransit Documentation',
+    link: 'https://masstransit.io/documentation/',
+    note: 'Consumers, sagas, middleware'
   }, {
     category: 'MassTransit Demo',
     name: 'MassTransitOutboxDemo (GitHub)',
-    link: 'https://github.com/MassTransit/Sample-Outbox'
+    link: 'https://github.com/MassTransit/Sample-Outbox',
+    note: 'Xem sau khi đọc docs'
   }, {
     category: 'Outbox',
     name: '⭐ Event-Driven Architecture: Async Messaging Patterns (2025)',
-    link: 'https://event-driven.io/en/outbox_inbox_patterns_and_delivery_guarantees_explained/'
+    link: 'https://event-driven.io/en/outbox_inbox_patterns_and_delivery_guarantees_explained/',
+    note: 'Đọc mục Outbox Pattern kỹ nhất'
   }, {
     category: 'Outbox + Saga',
-    name: 'Building a Reliable Rollback System with SAGA, Outbox (Medium)',
-    link: 'https://medium.com/'
+    name: 'Building a Reliable Rollback System with SAGA, Outbox',
+    link: 'https://medium.com/',
+    note: 'Thực hành kết hợp Outbox + Saga'
   }, {
     category: 'Idempotency',
     name: '⭐ 🆕 Idempotency Key Pattern (Stripe Engineering Blog)',
-    link: 'https://stripe.com/blog/idempotency'
+    link: 'https://stripe.com/blog/idempotency',
+    note: 'Best practice thực tế nhất'
   }, {
     category: 'Saga',
-    name: '⭐ Event-Driven Architecture Pocket Guide (sách)',
-    link: 'https://www.oreilly.com/library/view/event-driven-architecture-pocket/9781098157074/'
+    name: '⭐ Event-Driven Architecture Pocket Guide',
+    link: 'https://www.oreilly.com/library/view/event-driven-architecture-pocket/9781098157074/',
+    note: 'Đọc chương Saga Choreography vs Orchestration trước'
   }, {
     category: 'Saga',
     name: '🆕 MassTransit – State Machine Saga (Automatonymous)',
-    link: 'https://masstransit.io/documentation/patterns/saga/state-machine'
+    link: 'https://masstransit.io/documentation/patterns/saga/state-machine',
+    note: 'Implement Saga orchestration với MassTransit'
   }, {
     category: 'Serialization',
     name: '⭐ 🆕 Protobuf .NET (protobuf-net)',
-    link: 'https://github.com/protobuf-net/protobuf-net'
+    link: 'https://github.com/protobuf-net/protobuf-net',
+    note: 'Library phổ biến nhất cho Protobuf trong .NET'
   }, {
     category: 'Schema Evolution',
     name: '🆕 Backward/Forward Compatibility với Protobuf',
-    link: 'https://protobuf.dev/programming-guides/dos-donts/'
+    link: 'https://protobuf.dev/programming-guides/dos-donts/',
+    note: 'Đọc kỹ trước khi design message schema'
   }, {
-    category: 'Schema Evolution',
+    category: 'Schema Registry',
     name: '🆕 Schema Registry Concepts (Confluent)',
-    link: 'https://docs.confluent.io/platform/current/schema-registry/fundamentals/'
+    link: 'https://docs.confluent.io/platform/current/schema-registry/fundamentals/',
+    note: 'Hiểu khái niệm ngay cả khi không dùng Kafka'
   }, {
     category: 'Observability',
     name: '⭐ 🆕 OpenTelemetry for .NET (Official)',
-    link: 'https://opentelemetry.io/docs/languages/dotnet/'
+    link: 'https://opentelemetry.io/docs/languages/dotnet/',
+    note: 'Bắt buộc khi có nhiều service'
   }, {
     category: 'Observability',
-    name: '🆕 Distributed Tracing trong ASP.NET Core (Microsoft)',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/log-mon/distributed-tracing'
+    name: '🆕 Distributed Tracing trong ASP.NET Core',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/log-mon/distributed-tracing',
+    note: 'Kết hợp với Serilog từ Stage 1'
   }]
 }, {
   id: "stage-f3",
@@ -897,63 +948,78 @@ const STAGES = [{
   resources: [{
     category: 'Bridge – EF Core',
     name: '⭐ 🆕 Efficient Querying with EF Core (N+1, Include)',
-    link: 'https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying'
+    link: 'https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying',
+    note: 'N+1 problem – hay gặp nhất khi có 10M orders'
   }, {
     category: 'Bridge – Connection Pool',
     name: '🆕 PgBouncer – Connection Pooling for PostgreSQL',
-    link: 'https://www.pgbouncer.org/'
+    link: 'https://www.pgbouncer.org/',
+    note: 'Cần thiết khi nhiều service kết nối 1 DB'
   }, {
     category: 'Performance',
     name: '⭐ PostgreSQL Tutorial: Performance Optimization',
-    link: 'https://rockdata.net/tutorial/postgres-performance/'
+    link: 'https://rockdata.net/tutorial/postgres-performance/',
+    note: 'Indexing + EXPLAIN ANALYZE trước'
   }, {
     category: 'Performance',
     name: '⭐ 🆕 pg_stat_statements – Official Docs',
-    link: 'https://www.postgresql.org/docs/current/pgstatstatements.html'
+    link: 'https://www.postgresql.org/docs/current/pgstatstatements.html',
+    note: 'Identify slow queries trong production'
   }, {
     category: 'Labs',
     name: 'advanced-postgresql-practical-labs (GitHub)',
-    link: 'https://github.com/'
+    link: 'https://github.com/',
+    note: 'Thực hành indexing, transactions, partitioning'
   }, {
     category: 'Internals',
     name: '⭐ 🆕 MVCC trong PostgreSQL – Official Docs',
-    link: 'https://www.postgresql.org/docs/current/mvcc.html'
+    link: 'https://www.postgresql.org/docs/current/mvcc.html',
+    note: 'Hiểu MVCC mới debug được deadlock + ghost reads'
   }, {
     category: 'Deadlock',
     name: '🆕 Deadlock Detection & Prevention (PostgreSQL Wiki)',
-    link: 'https://wiki.postgresql.org/wiki/Lock_Monitoring'
+    link: 'https://wiki.postgresql.org/wiki/Lock_Monitoring',
+    note: 'Debug deadlock với pg_locks'
   }, {
     category: 'RLS',
     name: '⭐ Row Level Security – Official Docs',
-    link: 'https://www.postgresql.org/docs/current/ddl-rowsecurity.html'
+    link: 'https://www.postgresql.org/docs/current/ddl-rowsecurity.html',
+    note: 'Multi-tenant isolation'
   }, {
     category: 'RLS – .NET',
     name: '🆕 Implementing RLS with EF Core (blog)',
-    link: 'https://www.npgsql.org/efcore/misc/collations-and-case-sensitivity.html'
+    link: 'https://www.npgsql.org/efcore/misc/collations-and-case-sensitivity.html',
+    note: 'Cách set RLS context từ ASP.NET Core'
   }, {
     category: 'Partitioning',
     name: '🆕 Table Partitioning – PostgreSQL Official',
-    link: 'https://www.postgresql.org/docs/current/ddl-partitioning.html'
+    link: 'https://www.postgresql.org/docs/current/ddl-partitioning.html',
+    note: 'Dùng cho Orders table 10M rows'
   }, {
     category: 'Migration',
     name: '⭐ 🆕 gh-ost – GitHub (Online Schema Change)',
-    link: 'https://github.com/github/gh-ost'
+    link: 'https://github.com/github/gh-ost',
+    note: 'Migration không downtime cho bảng lớn'
   }, {
     category: 'Migration',
     name: '⭐ 🆕 Liquibase Documentation',
-    link: 'https://docs.liquibase.com/'
+    link: 'https://docs.liquibase.com/',
+    note: 'Quản lý migration scripts có version control'
   }, {
     category: 'Migration Strategy',
     name: '🆕 Backward-Compatible Migrations (PlanetScale Blog)',
-    link: 'https://planetscale.com/blog/backward-compatible-migrations'
+    link: 'https://planetscale.com/blog/backward-compatible-migrations',
+    note: 'Expand-contract, add-before-remove'
   }, {
     category: 'Audit',
     name: '⭐ 🆕 Audit Logging với PostgreSQL triggers + EF Core',
-    link: 'https://www.postgresql.org/docs/current/plpgsql-trigger.html'
+    link: 'https://www.postgresql.org/docs/current/plpgsql-trigger.html',
+    note: 'Implement qua PostgreSQL trigger'
   }, {
     category: 'Audit – .NET',
     name: '🆕 Audit.NET – Library cho .NET',
-    link: 'https://github.com/thepirat000/Audit.NET'
+    link: 'https://github.com/thepirat000/Audit.NET',
+    note: 'Thư viện audit log phổ biến trong .NET ecosystem'
   }]
 }, {
   id: "stage-5",
@@ -975,67 +1041,83 @@ const STAGES = [{
   resources: [{
     category: 'Bridge – TypeScript',
     name: '⭐ 🆕 TypeScript Handbook (Official)',
-    link: 'https://www.typescriptlang.org/docs/handbook/intro.html'
+    link: 'https://www.typescriptlang.org/docs/handbook/intro.html',
+    note: 'Bắt buộc – không có TS thì không làm Next.js được'
   }, {
     category: 'Bridge – React',
     name: '🆕 React – Quick Start (Official Docs)',
-    link: 'https://react.dev/learn'
+    link: 'https://react.dev/learn',
+    note: 'Hooks, state, effects trước khi vào Next.js'
   }, {
     category: 'Bridge – HTTP',
     name: '🆕 HTTP Fundamentals – MDN',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview'
+    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview',
+    note: 'Request/response cycle để hiểu SSR vs CSR'
   }, {
     category: 'Next.js',
     name: '⭐ 🆕 Next.js Official Documentation (App Router)',
-    link: 'https://nextjs.org/docs'
+    link: 'https://nextjs.org/docs',
+    note: 'Routing → Data Fetching → Rendering → Caching'
   }, {
     category: 'Next.js',
     name: '🆕 Next.js by Example – Vercel Templates',
-    link: 'https://vercel.com/templates/next.js'
+    link: 'https://vercel.com/templates/next.js',
+    note: 'Chọn Dashboard template để bắt đầu'
   }, {
     category: 'Next.js',
     name: '🆕 Lee Robinson – Next.js App Router (YouTube)',
-    link: 'https://www.youtube.com/@leerob'
+    link: 'https://www.youtube.com/@leerob',
+    note: 'Video thực chiến từ core team Vercel'
   }, {
     category: 'Data Fetching',
-    name: '⭐ 🆕 TanStack Query (React Query) Documentation',
-    link: 'https://tanstack.com/query/latest'
+    name: '⭐ 🆕 TanStack Query Documentation',
+    link: 'https://tanstack.com/query/latest',
+    note: 'Server-state management – cần cho dashboard real-time'
   }, {
     category: 'State',
     name: '🆕 Zustand Documentation',
-    link: 'https://docs.pmnd.rs/zustand/getting-started/introduction'
+    link: 'https://docs.pmnd.rs/zustand/getting-started/introduction',
+    note: 'Client-state management nhẹ hơn Redux'
   }, {
     category: 'Type-safe API',
     name: '⭐ 🆕 tRPC Documentation',
-    link: 'https://trpc.io/docs'
+    link: 'https://trpc.io/docs',
+    note: 'End-to-end typesafe API giữa Next.js và .NET backend'
   }, {
     category: 'Styling',
     name: '⭐ 🆕 Tailwind CSS Documentation',
-    link: 'https://tailwindcss.com/docs'
+    link: 'https://tailwindcss.com/docs',
+    note: 'Core Concepts trước; dùng với shadcn/ui'
   }, {
     category: 'UI Library',
     name: '🆕 shadcn/ui – Component Library',
-    link: 'https://ui.shadcn.com/'
+    link: 'https://ui.shadcn.com/',
+    note: 'Component library dùng với Tailwind'
   }, {
     category: 'Charts',
     name: '🆕 Recharts Documentation',
-    link: 'https://recharts.org/en-US/'
+    link: 'https://recharts.org/en-US/',
+    note: 'Biểu đồ cho dashboard'
   }, {
     category: 'Auth',
     name: '⭐ 🆕 NextAuth.js v5 (Auth.js) Documentation',
-    link: 'https://authjs.dev/'
+    link: 'https://authjs.dev/',
+    note: 'OAuth2 provider integration; kết nối với Stage 8'
   }, {
     category: 'Testing',
     name: '⭐ 🆕 Playwright – E2E Testing',
-    link: 'https://playwright.dev/docs/intro'
+    link: 'https://playwright.dev/docs/intro',
+    note: 'E2E test; tích hợp CI/CD Stage 6'
   }, {
     category: 'Testing',
     name: '🆕 Vitest Documentation',
-    link: 'https://vitest.dev/'
+    link: 'https://vitest.dev/',
+    note: 'Unit test cho React components'
   }, {
     category: 'Deployment',
     name: '⭐ 🆕 Vercel Deployment Documentation',
-    link: 'https://vercel.com/docs'
+    link: 'https://vercel.com/docs',
+    note: 'Deploy nhanh nhất cho Next.js'
   }]
 }, {
   id: "stage-6",
@@ -1057,68 +1139,84 @@ const STAGES = [{
   time: "10 tuần (Full-time) | 20 tuần (Part-time)",
   resources: [{
     category: 'Bridge – Linux',
-    name: '⭐ 🆕 The Linux Command Line (William Shotts – free online)',
-    link: 'https://linuxcommand.org/tlcl.php'
+    name: '⭐ 🆕 The Linux Command Line (William Shotts – free)',
+    link: 'https://linuxcommand.org/tlcl.php',
+    note: 'Bắt buộc – không có Linux basics thì không vận hành K8s'
   }, {
     category: 'Bridge – Networking',
     name: '🆕 Computer Networking: A Top-Down Approach (Kurose & Ross)',
-    link: 'https://gaia.cs.umass.edu/kurose_ross/'
+    link: 'https://gaia.cs.umass.edu/kurose_ross/',
+    note: 'Chương 1-4 đủ để hiểu DNS, HTTP, TCP trong K8s'
   }, {
     category: 'Bridge – Docker',
     name: '⭐ 🆕 Docker in Practice (Manning)',
-    link: 'https://www.manning.com/books/docker-in-practice-second-edition'
+    link: 'https://www.manning.com/books/docker-in-practice-second-edition',
+    note: 'Nâng cao từ Docker Getting Started'
   }, {
     category: 'K8s',
     name: '⭐ 🆕 Kubernetes Official Documentation – Concepts',
-    link: 'https://kubernetes.io/docs/concepts/'
+    link: 'https://kubernetes.io/docs/concepts/',
+    note: 'Pods → Deployments → Services → ConfigMaps → Ingress'
   }, {
     category: 'K8s',
     name: '🆕 Kubernetes The Hard Way (Kelsey Hightower)',
-    link: 'https://github.com/kelseyhightower/kubernetes-the-hard-way'
+    link: 'https://github.com/kelseyhightower/kubernetes-the-hard-way',
+    note: 'Setup manual để hiểu bên trong K8s'
   }, {
     category: 'K8s Practice',
     name: '⭐ 🆕 CKAD Practice Labs (GitHub)',
-    link: 'https://github.com/dgkanatsios/CKAD-exercises'
+    link: 'https://github.com/dgkanatsios/CKAD-exercises',
+    note: 'Bộ bài tập thực hành theo chuẩn CKAD'
   }, {
     category: 'Helm',
     name: '🆕 Helm Documentation',
-    link: 'https://helm.sh/docs/'
+    link: 'https://helm.sh/docs/',
+    note: 'Package manager cho K8s'
   }, {
     category: 'CI/CD',
     name: '⭐ 🆕 GitHub Actions Documentation',
-    link: 'https://docs.github.com/en/actions'
+    link: 'https://docs.github.com/en/actions',
+    note: 'Build pipeline: test → Docker → push → deploy K8s'
   }, {
     category: 'GitOps',
     name: '🆕 ArgoCD Documentation',
-    link: 'https://argo-cd.readthedocs.io/en/stable/'
+    link: 'https://argo-cd.readthedocs.io/en/stable/',
+    note: 'GitOps – pull config từ Git vào K8s cluster'
   }, {
     category: 'Metrics',
     name: '⭐ 🆕 Prometheus Documentation',
-    link: 'https://prometheus.io/docs/introduction/overview/'
+    link: 'https://prometheus.io/docs/introduction/overview/',
+    note: 'Scrape metrics từ K8s pods và .NET /metrics endpoint'
   }, {
     category: 'Visualization',
     name: '⭐ 🆕 Grafana Documentation',
-    link: 'https://grafana.com/docs/grafana/latest/'
+    link: 'https://grafana.com/docs/grafana/latest/',
+    note: 'Dashboard metrics + alert rules từ Prometheus'
   }, {
     category: 'Logs',
     name: '🆕 Grafana Loki Documentation',
-    link: 'https://grafana.com/docs/loki/latest/'
+    link: 'https://grafana.com/docs/loki/latest/',
+    note: 'Log aggregation – nhẹ hơn ELK Stack'
   }, {
     category: 'Tracing',
     name: '⭐ 🆕 Jaeger Tracing Documentation',
-    link: 'https://www.jaegertracing.io/docs/'
+    link: 'https://www.jaegertracing.io/docs/',
+    note: 'Distributed tracing – kết nối với OpenTelemetry Stage 3'
   }, {
     category: 'SRE',
     name: '⭐ 🆕 Site Reliability Engineering (Google SRE Book – free)',
-    link: 'https://sre.google/sre-book/table-of-contents/'
+    link: 'https://sre.google/sre-book/table-of-contents/',
+    note: 'Ch.2 (SLO), Ch.3 (Risk), Ch.13 (On-call)'
   }, {
     category: 'SRE',
     name: '🆕 The Site Reliability Workbook (Google – free)',
-    link: 'https://sre.google/workbook/table-of-contents/'
+    link: 'https://sre.google/workbook/table-of-contents/',
+    note: 'Practical companion – có exercises'
   }, {
     category: 'Incident',
     name: '🆕 PagerDuty – Incident Response Documentation',
-    link: 'https://response.pagerduty.com/'
+    link: 'https://response.pagerduty.com/',
+    note: 'Runbook template + incident management'
   }]
 }, {
   id: "stage-f4",
@@ -1177,72 +1275,89 @@ const STAGES = [{
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
     category: 'Bridge – Python',
-    name: '⭐ 🆕 Python Official Tutorial (docs.python.org)',
-    link: 'https://docs.python.org/3/tutorial/'
+    name: '⭐ 🆕 Python Official Tutorial',
+    link: 'https://docs.python.org/3/tutorial/',
+    note: 'Python cần thiết cho hầu hết AI/ML tooling'
   }, {
     category: 'Bridge – AI Concepts',
     name: '🆕 Fast.ai – Practical Deep Learning for Coders (free)',
-    link: 'https://course.fast.ai/'
+    link: 'https://course.fast.ai/',
+    note: 'Embedding, neural net basics trước khi dùng LLM API'
   }, {
     category: 'Bridge – LLM Basics',
-    name: '⭐ 🆕 Andrej Karpathy – Intro to Large Language Models (YouTube)',
-    link: 'https://www.youtube.com/watch?v=zjkBMFhNj_g'
+    name: '⭐ 🆕 Andrej Karpathy – Intro to LLMs (YouTube)',
+    link: 'https://www.youtube.com/watch?v=zjkBMFhNj_g',
+    note: '1 giờ – tổng quan LLM tốt nhất hiện tại'
   }, {
     category: 'LLM API',
     name: '⭐ 🆕 OpenAI API Documentation',
-    link: 'https://platform.openai.com/docs/'
+    link: 'https://platform.openai.com/docs/',
+    note: 'Bắt đầu với Chat Completions API; sau đó Embeddings'
   }, {
     category: 'LLM API',
     name: '🆕 Anthropic Claude API Documentation',
-    link: 'https://docs.anthropic.com/en/api/'
+    link: 'https://docs.anthropic.com/en/api/',
+    note: 'Alternative LLM – so sánh providers'
   }, {
     category: 'Prompt Engineering',
     name: '⭐ 🆕 Anthropic Prompt Engineering Guide',
-    link: 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview'
+    link: 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview',
+    note: 'Best practice prompting – áp dụng cả GPT-4 lẫn Claude'
   }, {
     category: 'RAG',
     name: '⭐ 🆕 LangChain Documentation – RAG',
-    link: 'https://python.langchain.com/docs/tutorials/rag/'
+    link: 'https://python.langchain.com/docs/tutorials/rag/',
+    note: 'Tutorial RAG từ đầu đến cuối'
   }, {
     category: 'RAG – .NET',
     name: '⭐ 🆕 Microsoft Semantic Kernel Documentation',
-    link: 'https://learn.microsoft.com/en-us/semantic-kernel/overview/'
+    link: 'https://learn.microsoft.com/en-us/semantic-kernel/overview/',
+    note: 'RAG trong C# .NET – quan trọng vì project chính là .NET'
   }, {
     category: 'Embeddings',
     name: '🆕 OpenAI Embeddings Guide',
-    link: 'https://platform.openai.com/docs/guides/embeddings'
+    link: 'https://platform.openai.com/docs/guides/embeddings',
+    note: 'Hiểu vector embeddings trước khi dùng vector DB'
   }, {
-    category: 'Vector DB – PostgreSQL',
+    category: 'Vector DB',
     name: '⭐ 🆕 pgvector – GitHub',
-    link: 'https://github.com/pgvector/pgvector'
+    link: 'https://github.com/pgvector/pgvector',
+    note: 'Bắt đầu bằng pgvector vì đã dùng PostgreSQL'
   }, {
     category: 'Vector DB',
     name: '🆕 Qdrant Documentation',
-    link: 'https://qdrant.tech/documentation/'
+    link: 'https://qdrant.tech/documentation/',
+    note: 'Dedicated vector DB – khi pgvector không đủ scale'
   }, {
     category: 'Vector DB',
     name: '🆕 Pinecone Documentation',
-    link: 'https://docs.pinecone.io/'
+    link: 'https://docs.pinecone.io/',
+    note: 'Managed vector DB – dễ bắt đầu'
   }, {
     category: 'Chunking',
     name: '⭐ 🆕 Advanced RAG – Chunking Strategies (Pinecone Blog)',
-    link: 'https://www.pinecone.io/learn/chunking-strategies/'
+    link: 'https://www.pinecone.io/learn/chunking-strategies/',
+    note: 'Ảnh hưởng lớn nhất đến RAG quality'
   }, {
     category: 'Reranking',
     name: '🆕 Cohere Rerank Documentation',
-    link: 'https://docs.cohere.com/v2/docs/reranking'
+    link: 'https://docs.cohere.com/v2/docs/reranking',
+    note: 'Bước rerank sau vector search'
   }, {
     category: 'Evaluation',
     name: '⭐ 🆕 RAGAS – RAG Evaluation Framework',
-    link: 'https://docs.ragas.io/'
+    link: 'https://docs.ragas.io/',
+    note: 'Đánh giá chất lượng RAG pipeline – bắt buộc cho production'
   }, {
     category: 'Observability',
-    name: '⭐ 🆕 LangSmith Documentation (LangChain tracing)',
-    link: 'https://docs.smith.langchain.com/'
+    name: '⭐ 🆕 LangSmith Documentation',
+    link: 'https://docs.smith.langchain.com/',
+    note: 'Trace LLM calls, debug prompts, monitor cost'
   }, {
     category: 'Cost',
     name: '🆕 OpenAI Cookbook – Cost Optimization',
-    link: 'https://cookbook.openai.com/'
+    link: 'https://cookbook.openai.com/',
+    note: 'Caching, batching, model selection để giảm cost'
   }]
 }, {
   id: "stage-8",
@@ -1262,61 +1377,75 @@ const STAGES = [{
   constraint: "Không có.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: 'Bridge – Cryptography',
+    category: 'Bridge – Crypto',
     name: '⭐ 🆕 Crypto 101 (free ebook)',
-    link: 'https://www.crypto101.io/'
+    link: 'https://www.crypto101.io/',
+    note: 'Hash, symmetric/asymmetric, signatures – cần cho JWT/OAuth2'
   }, {
     category: 'Bridge – HTTP Security',
     name: '🆕 MDN – HTTP Security Headers',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security'
+    link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security',
+    note: 'CORS, CSP, HSTS – trước khi implement OAuth2 flows'
   }, {
     category: 'OAuth2',
-    name: '⭐ 🆕 OAuth 2.0 Simplified (Aaron Parecki – free online)',
-    link: 'https://www.oauth.com/'
+    name: '⭐ 🆕 OAuth 2.0 Simplified (Aaron Parecki – free)',
+    link: 'https://www.oauth.com/',
+    note: 'Tài liệu OAuth2 tốt nhất – đọc theo thứ tự từ đầu'
   }, {
     category: 'OAuth2',
     name: '⭐ 🆕 OAuth2 Security Best Current Practice (RFC 9700)',
-    link: 'https://datatracker.ietf.org/doc/html/rfc9700'
+    link: 'https://datatracker.ietf.org/doc/html/rfc9700',
+    note: 'Best practices bảo mật OAuth2 mới nhất'
   }, {
     category: 'OIDC',
     name: '🆕 OpenID Connect Core 1.0 Specification',
-    link: 'https://openid.net/specs/openid-connect-core-1_0.html'
+    link: 'https://openid.net/specs/openid-connect-core-1_0.html',
+    note: 'Phần Authorization Code Flow'
   }, {
     category: 'PKCE',
-    name: '🆕 Auth0 – What is PKCE? (blog)',
-    link: 'https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce'
+    name: '🆕 Auth0 – What is PKCE?',
+    link: 'https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce',
+    note: 'PKCE bắt buộc cho SPA và mobile apps'
   }, {
     category: 'Auth Server',
     name: '⭐ 🆕 Keycloak Documentation',
-    link: 'https://www.keycloak.org/documentation'
+    link: 'https://www.keycloak.org/documentation',
+    note: 'Open-source Identity Provider – bắt đầu ở đây'
   }, {
     category: 'Auth Server',
     name: '🆕 Duende IdentityServer Documentation',
-    link: 'https://docs.duendesoftware.com/identityserver/v7/'
+    link: 'https://docs.duendesoftware.com/identityserver/v7/',
+    note: '.NET native identity server'
   }, {
     category: 'Auth Server',
     name: '🆕 Auth0 Documentation',
-    link: 'https://auth0.com/docs'
+    link: 'https://auth0.com/docs',
+    note: 'Managed service – khi không muốn tự vận hành'
   }, {
     category: 'JWT',
     name: '⭐ 🆕 JWT Introduction (jwt.io)',
-    link: 'https://jwt.io/introduction'
+    link: 'https://jwt.io/introduction',
+    note: 'Header.payload.signature structure'
   }, {
     category: 'JWT Security',
     name: '🆕 JWT Security Best Practices (Okta Blog)',
-    link: 'https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc'
+    link: 'https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc',
+    note: 'Algorithm confusion, none alg attack, exp validation'
   }, {
     category: 'JWT – .NET',
-    name: '⭐ 🆕 ASP.NET Core JWT Bearer Authentication (Microsoft Docs)',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/jwt-authn'
+    name: '⭐ 🆕 ASP.NET Core JWT Bearer Authentication',
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/jwt-authn',
+    note: 'Integrate JWT validation trong .NET API'
   }, {
     category: 'Scalability',
     name: '⭐ 🆕 System Design – URL Shortener (ByteByteGo)',
-    link: 'https://bytebytego.com/courses/system-design-interview/design-a-url-shortener'
+    link: 'https://bytebytego.com/courses/system-design-interview/design-a-url-shortener',
+    note: 'Scale prototype → millions requests/day'
   }, {
     category: 'Analytics',
     name: '🆕 ClickHouse – Fast Analytics DB',
-    link: 'https://clickhouse.com/docs/en/intro'
+    link: 'https://clickhouse.com/docs/en/intro',
+    note: 'Ghi click analytics hiệu năng cao'
   }]
 }, {
   id: "stage-9",
@@ -1336,61 +1465,75 @@ const STAGES = [{
   constraint: "💰 Budget $300/tháng → bỏ một region.",
   time: "6 tuần (Full-time) | 12 tuần (Part-time)",
   resources: [{
-    category: 'Bridge – DNS & CDN',
+    category: 'Bridge – DNS/CDN',
     name: '⭐ 🆕 How DNS Works (Cloudflare Blog)',
-    link: 'https://www.cloudflare.com/learning/dns/what-is-dns/'
+    link: 'https://www.cloudflare.com/learning/dns/what-is-dns/',
+    note: 'Bắt buộc hiểu DNS routing trước multi-region'
   }, {
     category: 'Bridge – CDN',
     name: '🆕 What is a CDN? (Cloudflare Learning)',
-    link: 'https://www.cloudflare.com/learning/cdn/what-is-a-cdn/'
+    link: 'https://www.cloudflare.com/learning/cdn/what-is-a-cdn/',
+    note: 'CDN caching strategy'
   }, {
-    category: 'Bridge – Geo-distribution',
-    name: '⭐ 🆕 CAP Theorem Revisited (Martin Kleppmann paper)',
-    link: 'https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html'
+    category: 'Bridge – Geo',
+    name: '⭐ 🆕 CAP Theorem Revisited (Kleppmann)',
+    link: 'https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html',
+    note: 'Trade-off khi multi-region'
   }, {
     category: 'Feature Flags',
-    name: '⭐ 🆕 OpenFeature Specification (CNCF Standard)',
-    link: 'https://openfeature.dev/docs/reference/intro/'
+    name: '⭐ 🆕 OpenFeature Specification (CNCF)',
+    link: 'https://openfeature.dev/docs/reference/intro/',
+    note: 'Standard mở – vendor neutral'
   }, {
     category: 'Feature Flags',
     name: '⭐ 🆕 Unleash – Open Source Feature Flag Platform',
-    link: 'https://docs.getunleash.io/'
+    link: 'https://docs.getunleash.io/',
+    note: 'Self-hosted – dùng với .NET SDK'
   }, {
     category: 'Feature Flags',
     name: '🆕 LaunchDarkly Documentation',
-    link: 'https://docs.launchdarkly.com/'
+    link: 'https://docs.launchdarkly.com/',
+    note: 'Managed service – reference enterprise feature flags'
   }, {
     category: 'Feature Flags – .NET',
     name: '🆕 Microsoft.FeatureManagement Documentation',
-    link: 'https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-feature-flags-dotnet-core'
+    link: 'https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-feature-flags-dotnet-core',
+    note: 'Built-in feature flags cho .NET'
   }, {
     category: 'Replication',
-    name: '⭐ 🆕 PostgreSQL Streaming Replication (Official Docs)',
-    link: 'https://www.postgresql.org/docs/current/warm-standby.html'
+    name: '⭐ 🆕 PostgreSQL Streaming Replication',
+    link: 'https://www.postgresql.org/docs/current/warm-standby.html',
+    note: 'Setup primary + read replicas'
   }, {
     category: 'Replication',
     name: '🆕 Citus – Distributed PostgreSQL',
-    link: 'https://docs.citusdata.com/'
+    link: 'https://docs.citusdata.com/',
+    note: 'Scale-out PostgreSQL cho multi-region writes'
   }, {
     category: 'Multi-Region',
     name: '⭐ 🆕 Fly.io Multi-Region Documentation',
-    link: 'https://fly.io/docs/reference/regions/'
+    link: 'https://fly.io/docs/reference/regions/',
+    note: 'Dễ nhất để thực hành multi-region deploy'
   }, {
     category: 'Multi-Region',
     name: '🆕 Cloudflare Workers Documentation',
-    link: 'https://developers.cloudflare.com/workers/'
+    link: 'https://developers.cloudflare.com/workers/',
+    note: 'Edge computing – route users đến region gần nhất'
   }, {
     category: 'Multi-Region',
     name: '🆕 AWS Global Accelerator Documentation',
-    link: 'https://docs.aws.amazon.com/global-accelerator/'
+    link: 'https://docs.aws.amazon.com/global-accelerator/',
+    note: 'Production multi-region routing'
   }, {
     category: 'Consistency',
     name: '⭐ 🆕 DDIA – Chapter 5: Replication (Kleppmann)',
-    link: 'https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/'
+    link: 'https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/',
+    note: 'Leader election, replication lag, read-your-writes'
   }, {
     category: 'CRDTs',
-    name: '🆕 CRDT Explainer (Conflict-free Replicated Data Types)',
-    link: 'https://crdt.tech/'
+    name: '🆕 CRDT Explainer',
+    link: 'https://crdt.tech/',
+    note: 'Merge conflicts tự động – multi-region writes'
   }]
 }, {
   id: "stage-10",
@@ -1413,63 +1556,78 @@ const STAGES = [{
   resources: [{
     category: 'Bridge – Testing Legacy',
     name: '⭐ 🆕 Working Effectively with Legacy Code – Michael Feathers',
-    link: 'https://www.oreilly.com/library/view/working-effectively-with/0131177052/'
+    link: 'https://www.oreilly.com/library/view/working-effectively-with/0131177052/',
+    note: 'Thêm test vào code không có test'
   }, {
     category: 'Bridge – Characterization Tests',
     name: '🆕 Characterization Testing (Martin Fowler Bliki)',
-    link: 'https://martinfowler.com/bliki/CharacterizationTest.html'
+    link: 'https://martinfowler.com/bliki/CharacterizationTest.html',
+    note: 'Capture behavior hiện tại trước khi refactor'
   }, {
     category: 'Patterns',
-    name: '⭐ 🆕 Strangler Fig Application (Martin Fowler) – đọc lại Stage 3',
-    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html'
+    name: '⭐ 🆕 Strangler Fig Application (Martin Fowler)',
+    link: 'https://martinfowler.com/bliki/StranglerFigApplication.html',
+    note: 'Pattern chính để migrate legacy – incremental replacement'
   }, {
     category: 'Patterns',
     name: '🆕 Anti-Corruption Layer Pattern',
-    link: 'https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer'
+    link: 'https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer',
+    note: 'Isolate legacy domain model khỏi new system'
   }, {
     category: 'Patterns',
     name: '⭐ 🆕 Branch by Abstraction (Martin Fowler)',
-    link: 'https://martinfowler.com/bliki/BranchByAbstraction.html'
+    link: 'https://martinfowler.com/bliki/BranchByAbstraction.html',
+    note: 'Thay thế large-scale component trong running system'
   }, {
     category: 'Anti-patterns',
-    name: '🆕 Big Ball of Mud (Brian Foote & Joseph Yoder paper)',
-    link: 'http://www.laputan.org/mud/'
+    name: '🆕 Big Ball of Mud (Brian Foote & Joseph Yoder)',
+    link: 'http://www.laputan.org/mud/',
+    note: 'Nhận biết loại legacy system đang gặp'
   }, {
     category: 'DB Migration',
-    name: '⭐ 🆕 Evolutionary Database Design (Martin Fowler & Pramod Sadalage)',
-    link: 'https://martinfowler.com/articles/evodb.html'
+    name: '⭐ 🆕 Evolutionary Database Design (Martin Fowler)',
+    link: 'https://martinfowler.com/articles/evodb.html',
+    note: 'Migrate DB schema mà không break existing app'
   }, {
     category: 'DB Migration',
-    name: '🆕 Expand/Contract Pattern for Zero-Downtime DB Migration',
-    link: 'https://www.prisma.io/dataguide/types/relational/expand-and-contract-pattern'
+    name: '🆕 Expand/Contract Pattern for Zero-Downtime Migration',
+    link: 'https://www.prisma.io/dataguide/types/relational/expand-and-contract-pattern',
+    note: 'Thêm column mới trước, migrate data, xóa column cũ'
   }, {
     category: 'DB Migration',
     name: '🆕 Flyway vs Liquibase Comparison',
-    link: 'https://www.baeldung.com/flyway-vs-liquibase'
+    link: 'https://www.baeldung.com/flyway-vs-liquibase',
+    note: 'Chọn tool phù hợp'
   }, {
     category: 'Refactoring',
     name: '⭐ 🆕 Refactoring – Martin Fowler (2nd Edition)',
-    link: 'https://refactoring.com/'
+    link: 'https://refactoring.com/',
+    note: '66 refactoring techniques với code examples'
   }, {
     category: 'Refactoring',
     name: '🆕 Refactoring Guru – Design Patterns + Refactoring',
-    link: 'https://refactoring.guru/'
+    link: 'https://refactoring.guru/',
+    note: 'Visual guide – free online'
   }, {
     category: 'Event Sourcing',
     name: '⭐ 🆕 Event Sourcing (Martin Fowler)',
-    link: 'https://martinfowler.com/eaaDev/EventSourcing.html'
+    link: 'https://martinfowler.com/eaaDev/EventSourcing.html',
+    note: 'Migrate data mà không mất history'
   }, {
     category: 'Event Sourcing – .NET',
     name: '🆕 Marten – Event Store for PostgreSQL (.NET)',
-    link: 'https://martendb.io/'
+    link: 'https://martendb.io/',
+    note: 'Event Store trên PostgreSQL – .NET ecosystem'
   }, {
     category: 'ADR',
     name: '⭐ 🆕 Architecture Decision Records (Michael Nygard)',
-    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions'
+    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions',
+    note: 'Bắt buộc khi làm legacy migration'
   }, {
     category: 'ADR Tools',
     name: '🆕 ADR Tools (GitHub – npryce)',
-    link: 'https://github.com/npryce/adr-tools'
+    link: 'https://github.com/npryce/adr-tools',
+    note: 'CLI tool để tạo và quản lý ADR files'
   }]
 }, {
   id: "stage-11",
@@ -1490,64 +1648,79 @@ const STAGES = [{
   time: "8 tuần (Full-time) | 16 tuần (Part-time)",
   resources: [{
     category: 'Bridge – Math',
-    name: '⭐ 🆕 Discrete Mathematics and Its Applications – Kenneth Rosen',
-    link: 'https://www.mheducation.com/highered/product/discrete-mathematics-applications-rosen/M9781260091991.html'
+    name: '⭐ 🆕 Discrete Mathematics – Kenneth Rosen',
+    link: 'https://www.mheducation.com/highered/product/discrete-mathematics-applications-rosen/M9781260091991.html',
+    note: 'Logic, sets, graphs, proof techniques'
   }, {
     category: 'Bridge – Probability',
     name: '🆕 Introduction to Probability – Blitzstein & Hwang (free PDF)',
-    link: 'https://projects.iq.harvard.edu/stat110/home'
+    link: 'https://projects.iq.harvard.edu/stat110/home',
+    note: 'Xác suất cần cho Byzantine fault tolerance analysis'
   }, {
     category: 'Core Textbook',
-    name: '⭐ 🆕 Designing Data-Intensive Applications – Martin Kleppmann',
-    link: 'https://dataintensive.net/'
+    name: '⭐ 🆕 Designing Data-Intensive Applications – Kleppmann',
+    link: 'https://dataintensive.net/',
+    note: 'Sách quan trọng nhất cho distributed systems'
   }, {
     category: 'Core Textbook',
-    name: '🆕 Distributed Systems – Maarten van Steen & Andrew Tanenbaum (free PDF)',
-    link: 'https://www.distributed-systems.net/'
+    name: '🆕 Distributed Systems – van Steen & Tanenbaum (free PDF)',
+    link: 'https://www.distributed-systems.net/',
+    note: 'Textbook học thuật – đọc chọn lọc'
   }, {
     category: 'Foundations',
     name: '⭐ 🆕 MIT 6.824: Distributed Systems (Labs + Videos – free)',
-    link: 'https://pdos.csail.mit.edu/6.824/'
+    link: 'https://pdos.csail.mit.edu/6.824/',
+    note: 'Course tốt nhất – labs implement Raft, MapReduce, KV Store'
   }, {
     category: 'Raft',
     name: '⭐ 🆕 Raft Consensus Algorithm – The Raft Paper',
-    link: 'https://raft.github.io/raft.pdf'
+    link: 'https://raft.github.io/raft.pdf',
+    note: 'Đọc paper gốc; dễ hiểu hơn Paxos'
   }, {
     category: 'Raft',
     name: '🆕 The Raft Interactive Visualization',
-    link: 'https://raft.github.io/'
+    link: 'https://raft.github.io/',
+    note: 'Visual demo – leader election + log replication'
   }, {
     category: 'Paxos',
     name: '🆕 Paxos Made Simple – Leslie Lamport',
-    link: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf'
+    link: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf',
+    note: 'Đọc sau Raft để hiểu nguồn gốc'
   }, {
     category: 'Clocks',
-    name: '⭐ 🆕 Time, Clocks, and the Ordering of Events – Lamport (1978 paper)',
-    link: 'https://lamport.azurewebsites.net/pubs/time-clocks.pdf'
+    name: '⭐ 🆕 Time, Clocks, and the Ordering of Events – Lamport (1978)',
+    link: 'https://lamport.azurewebsites.net/pubs/time-clocks.pdf',
+    note: 'Paper kinh điển về Lamport Timestamps'
   }, {
     category: 'Vector Clocks',
     name: '🆕 Why Vector Clocks Are Hard (Riak Blog)',
-    link: 'https://riak.com/posts/technical/why-vector-clocks-are-hard/'
+    link: 'https://riak.com/posts/technical/why-vector-clocks-are-hard/',
+    note: 'Practical explanation về conflict detection'
   }, {
     category: 'Failure Models',
     name: '⭐ 🆕 Fallacies of Distributed Computing (Peter Deutsch)',
-    link: 'https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing'
+    link: 'https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing',
+    note: '8 assumptions sai lầm phổ biến'
   }, {
     category: 'FLP',
-    name: '🆕 FLP Impossibility – Explained (Paper + Blog)',
-    link: 'https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/'
+    name: '🆕 FLP Impossibility – Explained',
+    link: 'https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/',
+    note: 'Không thể có consensus trong async system với 1 faulty process'
   }, {
     category: 'Byzantine',
-    name: '🆕 Byzantine Fault Tolerance – Practical BFT (pBFT) Summary',
-    link: 'https://pmg.csail.mit.edu/papers/osdi99.pdf'
+    name: '🆕 Byzantine Fault Tolerance – pBFT Summary',
+    link: 'https://pmg.csail.mit.edu/papers/osdi99.pdf',
+    note: 'Cần cho blockchain/crypto context'
   }, {
     category: 'CRDTs',
     name: '⭐ 🆕 A Comprehensive Study of CRDTs (paper)',
-    link: 'https://hal.inria.fr/inria-00555588/document'
+    link: 'https://hal.inria.fr/inria-00555588/document',
+    note: 'G-Counter, LWW-Register...'
   }, {
     category: 'Consistency Models',
     name: '🆕 Jepsen – Consistency Models (Kyle Kingsbury)',
-    link: 'https://jepsen.io/consistency'
+    link: 'https://jepsen.io/consistency',
+    note: 'Visual map: linearizable → eventual'
   }]
 }, {
   id: "stage-12",
@@ -1567,65 +1740,80 @@ const STAGES = [{
   constraint: "💰 Security budget = $0 → chỉ dùng miễn phí.",
   time: "8 tuần (Full-time) | 16 tuần (Part-time)",
   resources: [{
-    category: 'Bridge – Networking Security',
-    name: '⭐ 🆕 Computer Networking: A Top-Down Approach – Security Chapters',
-    link: 'https://gaia.cs.umass.edu/kurose_ross/'
+    category: 'Bridge – Network Security',
+    name: '⭐ 🆕 Kurose & Ross – Security Chapters (Chapter 8)',
+    link: 'https://gaia.cs.umass.edu/kurose_ross/',
+    note: 'TLS/SSL, firewalls, VPN'
   }, {
     category: 'Bridge – Cryptography',
     name: '🆕 Crypto101 (nâng cao từ Stage 8)',
-    link: 'https://www.crypto101.io/'
+    link: 'https://www.crypto101.io/',
+    note: 'Asymmetric crypto, TLS handshake'
   }, {
     category: 'OWASP',
     name: '⭐ 🆕 OWASP Top 10 (2021)',
-    link: 'https://owasp.org/www-project-top-ten/'
+    link: 'https://owasp.org/www-project-top-ten/',
+    note: 'Từng vulnerability + cách fix trong .NET context'
   }, {
     category: 'OWASP',
     name: '🆕 OWASP .NET Security Cheat Sheet',
-    link: 'https://cheatsheetseries.owasp.org/cheatsheets/DotNet_Security_Cheat_Sheet.html'
+    link: 'https://cheatsheetseries.owasp.org/cheatsheets/DotNet_Security_Cheat_Sheet.html',
+    note: 'Specific cho C# .NET'
   }, {
     category: 'SQLi/XSS',
     name: '⭐ 🆕 PortSwigger Web Security Academy (free labs)',
-    link: 'https://portswigger.net/web-security'
+    link: 'https://portswigger.net/web-security',
+    note: 'Hands-on labs cho SQLi, XSS, CSRF, SSRF, XXE'
   }, {
     category: 'Threat Modeling',
-    name: '⭐ 🆕 Threat Modeling – Adam Shostack (sách)',
-    link: 'https://www.threatmodelingbook.com/'
+    name: '⭐ 🆕 Threat Modeling – Adam Shostack',
+    link: 'https://www.threatmodelingbook.com/',
+    note: 'STRIDE framework – hệ thống hóa threat analysis'
   }, {
     category: 'Threat Modeling',
     name: '🆕 Microsoft Threat Modeling Tool',
-    link: 'https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool'
+    link: 'https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool',
+    note: 'Free tool để vẽ threat model diagram'
   }, {
     category: 'Secrets',
     name: '⭐ 🆕 HashiCorp Vault Documentation',
-    link: 'https://developer.hashicorp.com/vault/docs'
+    link: 'https://developer.hashicorp.com/vault/docs',
+    note: 'Dynamic credentials, PKI certificate'
   }, {
     category: 'Secrets – .NET',
     name: '🆕 ASP.NET Core Data Protection API',
-    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/data-protection/'
+    link: 'https://learn.microsoft.com/en-us/aspnet/core/security/data-protection/',
+    note: 'Built-in key rotation và encryption trong .NET'
   }, {
     category: 'mTLS',
     name: '⭐ 🆕 Mutual TLS Explained (Cloudflare)',
-    link: 'https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/'
+    link: 'https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/',
+    note: 'Service-to-service authentication'
   }, {
     category: 'SAST',
     name: '⭐ 🆕 SonarQube Security Rules for C#',
-    link: 'https://rules.sonarsource.com/csharp/'
+    link: 'https://rules.sonarsource.com/csharp/',
+    note: 'Static analysis – tích hợp vào CI/CD Stage 6'
   }, {
     category: 'Dependency Scan',
     name: '🆕 OWASP Dependency-Check',
-    link: 'https://owasp.org/www-project-dependency-check/'
+    link: 'https://owasp.org/www-project-dependency-check/',
+    note: 'Scan NuGet packages cho known CVEs'
   }, {
     category: 'Penetration Testing',
     name: '⭐ 🆕 HackTheBox / TryHackMe (free tiers)',
-    link: 'https://www.hackthebox.com/'
+    link: 'https://www.hackthebox.com/',
+    note: 'Thực hành pentest trong sandbox'
   }, {
     category: 'Zero Trust',
     name: '⭐ 🆕 Zero Trust Architecture – NIST SP 800-207',
-    link: 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf'
+    link: 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf',
+    note: 'Framework thực tế'
   }, {
     category: 'Supply Chain',
-    name: '🆕 SLSA Framework (Supply Chain Levels for Software Artifacts)',
-    link: 'https://slsa.dev/'
+    name: '🆕 SLSA Framework',
+    link: 'https://slsa.dev/',
+    note: 'Bảo vệ software supply chain'
   }]
 }, {
   id: "stage-13",
@@ -1646,64 +1834,79 @@ const STAGES = [{
   time: "12 tuần (Full-time) | 24 tuần (Part-time)",
   resources: [{
     category: 'Bridge – C Language',
-    name: '⭐ 🆕 The C Programming Language – K&R (Kernighan & Ritchie)',
-    link: 'https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628'
+    name: '⭐ 🆕 The C Programming Language – K&R',
+    link: 'https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628',
+    note: 'Bắt buộc – không có C thì không đọc được systems code'
   }, {
     category: 'Bridge – Assembly',
     name: '🆕 x86 Assembly Language and C Fundamentals – Cavanagh',
-    link: 'https://www.amazon.com/x86-Assembly-Language-Fundamentals-Cavanagh/dp/1466568240'
+    link: 'https://www.amazon.com/x86-Assembly-Language-Fundamentals-Cavanagh/dp/1466568240',
+    note: 'Assembly basics – đọc disassembly output'
   }, {
     category: 'OS',
-    name: '⭐ 🆕 Operating Systems: Three Easy Pieces (OSTEP – free online)',
-    link: 'https://pages.cs.wisc.edu/~remzi/OSTEP/'
+    name: '⭐ 🆕 Operating Systems: Three Easy Pieces (OSTEP – free)',
+    link: 'https://pages.cs.wisc.edu/~remzi/OSTEP/',
+    note: 'Virtualization, Concurrency, Persistence'
   }, {
     category: 'OS',
     name: '🆕 Linux Kernel Development – Robert Love',
-    link: 'https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468'
+    link: 'https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468',
+    note: 'Scheduler, memory, file system'
   }, {
     category: 'OS – Practice',
     name: '🆕 xv6 – MIT Teaching OS (with labs)',
-    link: 'https://pdos.csail.mit.edu/6.S081/2021/'
+    link: 'https://pdos.csail.mit.edu/6.S081/2021/',
+    note: 'Implement OS features từ đầu'
   }, {
     category: 'Memory',
     name: '⭐ 🆕 What Every Programmer Should Know About Memory – Drepper',
-    link: 'https://people.freebsd.org/~lstewart/articles/cpumemory.pdf'
+    link: 'https://people.freebsd.org/~lstewart/articles/cpumemory.pdf',
+    note: 'Cache hierarchy, NUMA, memory bandwidth'
   }, {
     category: 'GC – .NET',
     name: '⭐ 🆕 CLR via C# – Jeffrey Richter (Chapter: GC)',
-    link: 'https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454'
+    link: 'https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454',
+    note: 'GC internals: Gen0/1/2, LOH, finalization'
   }, {
     category: 'GC – Tools',
     name: '🆕 PerfView Documentation (Microsoft)',
-    link: 'https://github.com/microsoft/perfview'
+    link: 'https://github.com/microsoft/perfview',
+    note: 'Profile .NET GC allocation'
   }, {
     category: 'TCP/IP',
     name: '⭐ 🆕 TCP/IP Illustrated Vol.1 – W. Richard Stevens',
-    link: 'https://www.amazon.com/TCP-Illustrated-Protocols-Addison-Wesley-Professional/dp/0321336313'
+    link: 'https://www.amazon.com/TCP-Illustrated-Protocols-Addison-Wesley-Professional/dp/0321336313',
+    note: 'Congestion control, slow start, TIME_WAIT'
   }, {
     category: 'HTTP/2 + QUIC',
     name: '🆕 HTTP/2 Explained (Daniel Stenberg)',
-    link: 'https://http2-explained.haxx.se/'
+    link: 'https://http2-explained.haxx.se/',
+    note: 'HTTP/2 multiplexing + QUIC/HTTP/3'
   }, {
     category: 'CPU',
     name: '⭐ 🆕 Computer Organization and Design – Patterson & Hennessy',
-    link: 'https://www.amazon.com/Computer-Organization-Design-RISC-V-Architecture/dp/0128203315'
+    link: 'https://www.amazon.com/Computer-Organization-Design-RISC-V-Architecture/dp/0128203315',
+    note: 'CPU pipeline, cache, branch prediction'
   }, {
     category: 'Profiling',
     name: '⭐ 🆕 BenchmarkDotNet Documentation',
-    link: 'https://benchmarkdotnet.org/articles/overview.html'
+    link: 'https://benchmarkdotnet.org/articles/overview.html',
+    note: 'Benchmark .NET code chính xác'
   }, {
     category: 'Profiling',
     name: '🆕 dotTrace / dotMemory (JetBrains)',
-    link: 'https://www.jetbrains.com/profiler/'
+    link: 'https://www.jetbrains.com/profiler/',
+    note: 'Production profiling cho .NET'
   }, {
     category: 'Compiler',
-    name: '⭐ 🆕 Crafting Interpreters – Robert Nystrom (free online)',
-    link: 'https://craftinginterpreters.com/'
+    name: '⭐ 🆕 Crafting Interpreters – Robert Nystrom (free)',
+    link: 'https://craftinginterpreters.com/',
+    note: 'Build interpreter từ đầu – AST, bytecode, VM'
   }, {
     category: 'JIT – .NET',
     name: '🆕 How the .NET JIT Works (Stephen Toub – Microsoft Blog)',
-    link: 'https://devblogs.microsoft.com/dotnet/'
+    link: 'https://devblogs.microsoft.com/dotnet/',
+    note: 'RyuJIT internals – tiered compilation, PGO, inlining'
   }]
 }, {
   id: "stage-14",
@@ -1724,61 +1927,1490 @@ const STAGES = [{
   time: "4 tuần (Full-time) | 8 tuần (Part-time)",
   resources: [{
     category: 'Bridge – Philosophy',
-    name: '⭐ 🆕 Simple Made Easy – Rich Hickey (Strange Loop 2011 talk)',
-    link: 'https://www.infoq.com/presentations/Simple-Made-Easy/'
+    name: '⭐ 🆕 Simple Made Easy – Rich Hickey (Strange Loop 2011)',
+    link: 'https://www.infoq.com/presentations/Simple-Made-Easy/',
+    note: 'Talk quan trọng nhất về simplicity – xem trước tiên'
   }, {
     category: 'Bridge – Thinking',
     name: '🆕 A Philosophy of Software Design – John Ousterhout',
-    link: 'https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201'
+    link: 'https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201',
+    note: 'Complexity là kẻ thù'
   }, {
     category: 'YAGNI/KISS',
     name: '⭐ 🆕 Martin Fowler – YAGNI (bliki)',
-    link: 'https://martinfowler.com/bliki/Yagni.html'
+    link: 'https://martinfowler.com/bliki/Yagni.html',
+    note: 'Quyết định khi nào không code'
   }, {
     category: 'YAGNI/KISS',
     name: '🆕 The Zen of Python applied to Software Design',
-    link: 'https://peps.python.org/pep-0020/'
+    link: 'https://peps.python.org/pep-0020/',
+    note: 'Tim Peters\' principles – áp dụng mọi ngôn ngữ'
   }, {
     category: 'DRY',
     name: '🆕 Don\'t Repeat Yourself – Pragmatic Programmer',
-    link: 'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052'
+    link: 'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052',
+    note: 'Giới hạn của DRY'
   }, {
     category: 'Tech Debt',
     name: '⭐ 🆕 Technical Debt Quadrant – Martin Fowler',
-    link: 'https://martinfowler.com/bliki/TechnicalDebtQuadrant.html'
+    link: 'https://martinfowler.com/bliki/TechnicalDebtQuadrant.html',
+    note: 'Prudent/reckless × deliberate/inadvertent'
   }, {
     category: 'Tech Debt',
     name: '🆕 Managing Technical Debt – Kruchten, Nord & Ozkaya',
-    link: 'https://www.oreilly.com/library/view/managing-technical-debt/9780135646052/'
+    link: 'https://www.oreilly.com/library/view/managing-technical-debt/9780135646052/',
+    note: 'Thực hành về tech debt trong agile teams'
   }, {
     category: 'ADR',
-    name: '⭐ 🆕 Documenting Architecture Decisions (Nygard – từ Stage X)',
-    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions'
+    name: '⭐ 🆕 Documenting Architecture Decisions (Nygard)',
+    link: 'https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions',
+    note: 'Viết ADR cho mọi quyết định simplification'
   }, {
     category: 'Documentation',
     name: '⭐ 🆕 Diátaxis Documentation Framework',
-    link: 'https://diataxis.fr/'
+    link: 'https://diataxis.fr/',
+    note: 'Tutorials, how-tos, reference, explanation'
   }, {
     category: 'Documentation',
     name: '🆕 The C4 Model for Visualising Software Architecture',
-    link: 'https://c4model.com/'
+    link: 'https://c4model.com/',
+    note: 'Context, Container, Component, Code'
   }, {
     category: 'Refactoring',
-    name: '⭐ 🆕 Kill It With Fire – Managing Aging Computer Systems (Marianne Bellotti)',
-    link: 'https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188'
+    name: '⭐ 🆕 Kill It With Fire – Marianne Bellotti',
+    link: 'https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188',
+    note: 'Tại sao systems trở nên phức tạp và cách đơn giản hóa'
   }, {
     category: 'Patterns',
-    name: '🆕 Replace Complex Conditional with Polymorphism (Refactoring Guru)',
-    link: 'https://refactoring.guru/replace-conditional-with-polymorphism'
+    name: '🆕 Replace Complex Conditional with Polymorphism',
+    link: 'https://refactoring.guru/replace-conditional-with-polymorphism',
+    note: 'Loại bỏ if/switch chains'
   }, {
     category: 'Thinking',
     name: '⭐ 🆕 The Pragmatic Programmer (20th Anniversary Edition)',
-    link: 'https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/'
+    link: 'https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/',
+    note: 'Tư duy và thực hành của lập trình viên pragmatic'
   }, {
     category: 'Thinking',
     name: '⭐ 🆕 Tidy First? – Kent Beck',
-    link: 'https://www.oreilly.com/library/view/tidy-first/9781098151232/'
+    link: 'https://www.oreilly.com/library/view/tidy-first/9781098151232/',
+    note: 'Khi nào nên simplify và khi nào không'
   }]
+}];
+const GIAI_DOAN = {
+  "gd1": {
+    "title": "Giai Đoạn 1 (Tháng 1-5): Nền Tảng",
+    "sections": [{
+      "period": "Tuan1-Ngay1",
+      "tasks": [{
+        "id": "#1_MentalModel",
+        "num": "1",
+        "category": "MentalModel",
+        "text": "Doc bai Map vs Territory va viet 1 cau hieu",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#2_Leetcode_Work",
+        "num": "2",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Two Sum - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#3_Leetcode_Right",
+        "num": "3",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Two Sum - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#4_Leetcode_Fast",
+        "num": "4",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Two Sum - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#5_CleanCode",
+        "num": "5",
+        "category": "CleanCode",
+        "text": "Doc 2 nguyen tac Clean Code co ban",
+        "isPriority": true,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay2",
+      "tasks": [{
+        "id": "#6_MentalModel",
+        "num": "6",
+        "category": "MentalModel",
+        "text": "Doc First Principles Thinking - ap dung vao Two Sum",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#7_Leetcode_Work",
+        "num": "7",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Valid Parentheses - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#8_Leetcode_Right",
+        "num": "8",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Valid Parentheses - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#9_Leetcode_Fast",
+        "num": "9",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Valid Parentheses - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#10_MentalModel",
+        "num": "10",
+        "category": "MentalModel",
+        "text": "Viet 1 cau: Stack giong tinh huong nao trong doi?",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay3",
+      "tasks": [{
+        "id": "#11_CSharp",
+        "num": "11",
+        "category": "CSharp",
+        "text": "Cai dat .NET SDK, tao console app Hello World",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#12_CSharp",
+        "num": "12",
+        "category": "CSharp",
+        "text": "Hoc List<T> va Dictionary<TKey,TValue>",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#13_CSharp_Work",
+        "num": "13",
+        "category": "CSharp_Work",
+        "text": "Implement lai Two Sum - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#14_CSharp_Right",
+        "num": "14",
+        "category": "CSharp_Right",
+        "text": "Implement lai Two Sum - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#15_CSharp_Fast",
+        "num": "15",
+        "category": "CSharp_Fast",
+        "text": "Implement lai Two Sum - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay4",
+      "tasks": [{
+        "id": "#16_Leetcode_Work",
+        "num": "16",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Buy and Sell Stock - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#17_Leetcode_Right",
+        "num": "17",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Buy and Sell Stock - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#18_Leetcode_Fast",
+        "num": "18",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Buy and Sell Stock - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#19_MentalModel",
+        "num": "19",
+        "category": "MentalModel",
+        "text": "Doc Inversion - hoi lam sao de lo tien?",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay5",
+      "tasks": [{
+        "id": "#20_CSharp",
+        "num": "20",
+        "category": "CSharp",
+        "text": "Hoc C# class, property, method - tao class StockMarket",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#21_Test_Work",
+        "num": "21",
+        "category": "Test_Work",
+        "text": "Viet unit test (xUnit) cho StockMarket - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#22_Test_Right",
+        "num": "22",
+        "category": "Test_Right",
+        "text": "Viet unit test - Phase2: Right (dat ten test ro rang)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#23_Test_Fast",
+        "num": "23",
+        "category": "Test_Fast",
+        "text": "Viet unit test - Phase3: Fast (ko can)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay6",
+      "tasks": [{
+        "id": "#24_Leetcode_Work",
+        "num": "24",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Merge Two Sorted Lists - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#25_Leetcode_Right",
+        "num": "25",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Merge Two Sorted Lists - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#26_Leetcode_Fast",
+        "num": "26",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Merge Two Sorted Lists - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#27_MentalModel",
+        "num": "27",
+        "category": "MentalModel",
+        "text": "Doc Second-Order Thinking - hau qua cap 2",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan1-Ngay7",
+      "tasks": [{
+        "id": "#28_TongKet",
+        "num": "28",
+        "category": "TongKet",
+        "text": "Viet 200 tu: HashMap va Stack giup giai quyet gi?",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay8",
+      "tasks": [{
+        "id": "#29_Leetcode_Work",
+        "num": "29",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Contains Duplicate - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#30_Leetcode_Right",
+        "num": "30",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Contains Duplicate - Phase2: Right (HashSet)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#31_Leetcode_Fast",
+        "num": "31",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Contains Duplicate - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#32_MentalModel",
+        "num": "32",
+        "category": "MentalModel",
+        "text": "Doc Circle of Competence - ve vong tron kien thuc",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay9",
+      "tasks": [{
+        "id": "#33_Leetcode_Work",
+        "num": "33",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Valid Anagram - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#34_Leetcode_Right",
+        "num": "34",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Valid Anagram - Phase2: Right (Dictionary)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#35_Leetcode_Fast",
+        "num": "35",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Valid Anagram - Phase3: Fast (mang 26 phan tu)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#36_CSharp",
+        "num": "36",
+        "category": "CSharp",
+        "text": "Hoc LINQ: GroupBy, ToDictionary",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay10",
+      "tasks": [{
+        "id": "#37_Leetcode_Work",
+        "num": "37",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Longest Substring (Medium) - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#38_Leetcode_Right",
+        "num": "38",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Longest Substring - Phase2: Right (sliding window)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#39_Leetcode_Fast",
+        "num": "39",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Longest Substring - Phase3: Fast (mang ASCII)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay11",
+      "tasks": [{
+        "id": "#40_MentalModel",
+        "num": "40",
+        "category": "MentalModel",
+        "text": "Doc Occam's Razor - ap dung vao solution hom qua",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#41_Leetcode_Right",
+        "num": "41",
+        "category": "Leetcode_Right",
+        "text": "Viet lai solution ro rang hon - renaming, tach ham",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay12",
+      "tasks": [{
+        "id": "#42_CSharp_Work",
+        "num": "42",
+        "category": "CSharp_Work",
+        "text": "Tao ASP.NET Core Web API /check-duplicate - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#43_CSharp_Right",
+        "num": "43",
+        "category": "CSharp_Right",
+        "text": "API - Phase2: Right (try-catch, xu ly input rong)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#44_CSharp_Fast",
+        "num": "44",
+        "category": "CSharp_Fast",
+        "text": "API - Phase3: Fast (middleware logging, cache)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#45_Test",
+        "num": "45",
+        "category": "Test",
+        "text": "Goi API bang Postman hoac curl",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay13",
+      "tasks": [{
+        "id": "#46_Leetcode_Work",
+        "num": "46",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Maximum Subarray (Kadane) - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#47_Leetcode_Right",
+        "num": "47",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Maximum Subarray - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#48_Leetcode_Fast",
+        "num": "48",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Maximum Subarray - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#49_MentalModel",
+        "num": "49",
+        "category": "MentalModel",
+        "text": "Doc Paul Graham How to Think for Yourself",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan2-Ngay14",
+      "tasks": [{
+        "id": "#50_TongKet",
+        "num": "50",
+        "category": "TongKet",
+        "text": "Giai thich sliding window bang ve hinh",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay15",
+      "tasks": [{
+        "id": "#51_Leetcode_Work",
+        "num": "51",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Product of Array Except Self - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#52_Leetcode_Right",
+        "num": "52",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Product of Array - Phase2: Right (prefix/suffix)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#53_Leetcode_Fast",
+        "num": "53",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Product of Array - Phase3: Fast (O(1) space)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#54_CongCu",
+        "num": "54",
+        "category": "CongCu",
+        "text": "Cai SonarLint vao IDE - sua canh bao",
+        "isPriority": true,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay16",
+      "tasks": [{
+        "id": "#55_CSharp_Work",
+        "num": "55",
+        "category": "CSharp_Work",
+        "text": "Tao console app rate limiting dung Queue - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#56_CSharp_Right",
+        "num": "56",
+        "category": "CSharp_Right",
+        "text": "Rate limiting - Phase2: Right (tach class RateLimiter)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#57_CSharp_Fast",
+        "num": "57",
+        "category": "CSharp_Fast",
+        "text": "Rate limiting - Phase3: Fast (ConcurrentQueue)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#58_MentalModel",
+        "num": "58",
+        "category": "MentalModel",
+        "text": "So sanh prefix/suffix vs rate limiting - diem chung?",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay17",
+      "tasks": [{
+        "id": "#59_Leetcode_Work",
+        "num": "59",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Invert Binary Tree - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#60_Leetcode_Right",
+        "num": "60",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Invert Binary Tree - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#61_Leetcode_Fast",
+        "num": "61",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Invert Binary Tree - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay18",
+      "tasks": [{
+        "id": "#62_CSharp",
+        "num": "62",
+        "category": "CSharp",
+        "text": "Hoc Entity Framework Core - Code First",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#63_CSharp",
+        "num": "63",
+        "category": "CSharp",
+        "text": "Thiet ke bang User va Order - LINQ lay user tong tien > 100",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay19",
+      "tasks": [{
+        "id": "#64_Leetcode_Work",
+        "num": "64",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Number of Islands (BFS/DFS) - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#65_Leetcode_Right",
+        "num": "65",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Number of Islands - Phase2: Right",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#66_Leetcode_Fast",
+        "num": "66",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Number of Islands - Phase3: Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay20",
+      "tasks": [{
+        "id": "#67_MentalModel",
+        "num": "67",
+        "category": "MentalModel",
+        "text": "Doc Paul Graham The Age of the Essay - viet doan tuan nay",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan3-Ngay21",
+      "tasks": [{
+        "id": "#68_Leetcode_Work",
+        "num": "68",
+        "category": "Leetcode_Work",
+        "text": "Lam lai Longest Substring - Phase1+2+3 trong 30 phut",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay22",
+      "tasks": [{
+        "id": "#69_MentalModel",
+        "num": "69",
+        "category": "MentalModel",
+        "text": "Doc The Habit of Bayes - tinh xac suat code co bug",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay23",
+      "tasks": [{
+        "id": "#70_Leetcode_Work",
+        "num": "70",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Median of Two Sorted Arrays (Hard) - doc solution",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#71_Leetcode_Right",
+        "num": "71",
+        "category": "Leetcode_Right",
+        "text": "Hard - Phase2: viet lai pseudocode",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#72_Leetcode_Fast",
+        "num": "72",
+        "category": "Leetcode_Fast",
+        "text": "Hard - Phase3: tu code va chay test",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay24",
+      "tasks": [{
+        "id": "#73_Leetcode_Work",
+        "num": "73",
+        "category": "Leetcode_Work",
+        "text": "Implement Binary Search - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#74_Leetcode_Right",
+        "num": "74",
+        "category": "Leetcode_Right",
+        "text": "Binary Search - Phase2: Right (edge case mang rong)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#75_Leetcode_Fast",
+        "num": "75",
+        "category": "Leetcode_Fast",
+        "text": "Binary Search - Phase3: Fast (so sanh thu vien)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay25",
+      "tasks": [{
+        "id": "#76_Debug",
+        "num": "76",
+        "category": "Debug",
+        "text": "Doc Ladder of Causation - ap dung vao debugging",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay26",
+      "tasks": [{
+        "id": "#77_Leetcode_Work",
+        "num": "77",
+        "category": "Leetcode_Work",
+        "text": "Leetcode Course Schedule (cycle detection) - Phase1: Work",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#78_Leetcode_Right",
+        "num": "78",
+        "category": "Leetcode_Right",
+        "text": "Leetcode Course Schedule - Phase2: Right (color visited)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#79_Leetcode_Fast",
+        "num": "79",
+        "category": "Leetcode_Fast",
+        "text": "Leetcode Course Schedule - Phase3: Fast (Topological sort)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay27",
+      "tasks": [{
+        "id": "#80_CSharp",
+        "num": "80",
+        "category": "CSharp",
+        "text": "Hoc Dependency Injection trong ASP.NET Core",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Tuan4-Ngay28",
+      "tasks": [{
+        "id": "#81_TongKet",
+        "num": "81",
+        "category": "TongKet",
+        "text": "Viet blog: Cau truc an trong 3 bai Leetcode da hoc",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang2-Tuan5",
+      "tasks": [{
+        "id": "#82_Leetcode_Work",
+        "num": "82",
+        "category": "Leetcode_Work",
+        "text": "Moi tuan 3 bai Leetcode Medium (Graph/DP) - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#83_MentalModel",
+        "num": "83",
+        "category": "MentalModel",
+        "text": "Doc 1 mental model moi - ap dung vao bai toan thuc te",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang2-Tuan6",
+      "tasks": [{
+        "id": "#84_Viet",
+        "num": "84",
+        "category": "Viet",
+        "text": "Viet 200 tu giai thich pattern vua hoc",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang2-Tuan7",
+      "tasks": [{
+        "id": "#85_CSharp",
+        "num": "85",
+        "category": "CSharp",
+        "text": "Them tinh nang JWT cho project .NET - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang2-Tuan8",
+      "tasks": [{
+        "id": "#86_ThoiQuen",
+        "num": "86",
+        "category": "ThoiQuen",
+        "text": "20 phut toi moi ngay: Leetcode - code that - quyet dinh doi",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang3-Tuan9",
+      "tasks": [{
+        "id": "#87_Leetcode",
+        "num": "87",
+        "category": "Leetcode",
+        "text": "Review lai 5 bai Medium cu - giai lai Work+Right (15p/bai)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang3-Tuan10",
+      "tasks": [{
+        "id": "#88_MentalModel",
+        "num": "88",
+        "category": "MentalModel",
+        "text": "Doc 1 bai Paul Graham - viet lai y chinh 3 cau",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang3-Tuan11",
+      "tasks": [{
+        "id": "#89_DayLai",
+        "num": "89",
+        "category": "DayLai",
+        "text": "Tim 1 nguoi de giai thich 1 mental model - day lai",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang3-Tuan12",
+      "tasks": [{
+        "id": "#90_CSharp",
+        "num": "90",
+        "category": "CSharp",
+        "text": "Xay mini project URL shortener - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }]
+  },
+  "gd2": {
+    "title": "Giai Đoạn 2 (Tháng 6-18): Chuyên Sâu",
+    "sections": [{
+      "period": "Thang6",
+      "tasks": [{
+        "id": "#91_SachXin",
+        "num": "91",
+        "category": "SachXin",
+        "text": "Doc Clean Code chuong 1-2 - ap dung vao toan bo code da viet",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#92_Refactor",
+        "num": "92",
+        "category": "Refactor",
+        "text": "Doc Refactoring - Extract Method, Rename - ap dung project cu",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#93_ThoiQuen",
+        "num": "93",
+        "category": "ThoiQuen",
+        "text": "Thuc hanh Make it right bat buoc sau moi bai Leetcode",
+        "isPriority": true,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang7-Tuan1",
+      "tasks": [{
+        "id": "#94_Leetcode",
+        "num": "94",
+        "category": "Leetcode",
+        "text": "10 bai DP co ban - moi bai Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#119_Feedback",
+        "num": "119",
+        "category": "Feedback",
+        "text": "Post code DP len GitHub - xin review Discord C# Vietnam",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang7-Tuan2",
+      "tasks": [{
+        "id": "#95_Leetcode",
+        "num": "95",
+        "category": "Leetcode",
+        "text": "10 bai Graph - moi bai Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#120_ScaleThinking",
+        "num": "120",
+        "category": "ScaleThinking",
+        "text": "Sau moi bai Graph: hoi neu 10 trieu node thi sao?",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang7-Tuan3",
+      "tasks": [{
+        "id": "#96_Leetcode",
+        "num": "96",
+        "category": "Leetcode",
+        "text": "5 bai Backtracking - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang7-Tuan4",
+      "tasks": [{
+        "id": "#97_Leetcode",
+        "num": "97",
+        "category": "Leetcode",
+        "text": "1 bai Hard hoan chinh - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang8-Tuan1",
+      "tasks": [{
+        "id": "#98_Architecture",
+        "num": "98",
+        "category": "Architecture",
+        "text": "Doc Clean Architecture - ap dung vao project hien co",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#99_Architecture",
+        "num": "99",
+        "category": "Architecture",
+        "text": "Tach project: Domain, Application, Infrastructure, API",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#100_Performance",
+        "num": "100",
+        "category": "Performance",
+        "text": "Doc C# in Depth - String vs StringBuilder - thuc hanh ngay",
+        "isPriority": true,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#121_Architecture",
+        "num": "121",
+        "category": "Architecture",
+        "text": "Doc DDIA chuong 1 - ve diagram he thong URL shortener",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang8-Tuan2",
+      "tasks": [{
+        "id": "#101_Test",
+        "num": "101",
+        "category": "Test",
+        "text": "Viet Unit test cho Application layer (coverage >70%)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#122_SystemDesign",
+        "num": "122",
+        "category": "SystemDesign",
+        "text": "Ve diagram thiet ke YouTube (phan upload) - khong code",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang8-Tuan3",
+      "tasks": [{
+        "id": "#102_Performance",
+        "num": "102",
+        "category": "Performance",
+        "text": "Them Redis cache cho endpoint cham - do performance",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang8-Tuan4",
+      "tasks": [{
+        "id": "#103_MentalModel",
+        "num": "103",
+        "category": "MentalModel",
+        "text": "Ap dung Inversion - tim dieu lam project cham nhat",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang9-Tuan1",
+      "tasks": [{
+        "id": "#104_MentalModel",
+        "num": "104",
+        "category": "MentalModel",
+        "text": "Doc The Psychology of Human Misjudgment - ghi 5 bias",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#123_Architecture",
+        "num": "123",
+        "category": "Architecture",
+        "text": "Doc DDIA chuong 2 - so sanh SQL vs NoSQL cho project",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang9-Tuan2",
+      "tasks": [{
+        "id": "#105_DocCode",
+        "num": "105",
+        "category": "DocCode",
+        "text": "Doc source code List<T>.Find tren GitHub - giai thich",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#124_SystemDesign",
+        "num": "124",
+        "category": "SystemDesign",
+        "text": "Ve diagram thiet ke Grab (phan match driver)",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang9-Tuan3",
+      "tasks": [{
+        "id": "#106_MentalModel",
+        "num": "106",
+        "category": "MentalModel",
+        "text": "Ap dung Second-Order Thinking vao quyet dinh cong viec",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang10-12",
+      "tasks": [{
+        "id": "#107_Leetcode",
+        "num": "107",
+        "category": "Leetcode",
+        "text": "Moi tuan 3 Leetcode (2 Medium + 1 Hard) - Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#108_CSharp",
+        "num": "108",
+        "category": "CSharp",
+        "text": "Moi thang 1 tinh nang .NET moi (SignalR, gRPC)",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#125_OpenSource",
+        "num": "125",
+        "category": "OpenSource",
+        "text": "Moi thang submit 1 PR open source .NET (bug fix that)",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#126_SystemDesign",
+        "num": "126",
+        "category": "SystemDesign",
+        "text": "Moi thang doc 1 chuong DDIA - ve diagram ap dung project",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang12",
+      "tasks": [{
+        "id": "#109_CSharp",
+        "num": "109",
+        "category": "CSharp",
+        "text": "URL shortener hoan chinh + Unit test + Log - refactor",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang13",
+      "tasks": [{
+        "id": "#110_Leetcode",
+        "num": "110",
+        "category": "Leetcode",
+        "text": "50 bai Leetcode Hard - moi bai Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#111_Performance",
+        "num": "111",
+        "category": "Performance",
+        "text": "Doc CLR via C# (GC) - dung PerfView kiem tra memory",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang14",
+      "tasks": [{
+        "id": "#112_DocCode",
+        "num": "112",
+        "category": "DocCode",
+        "text": "Doc source ASP.NET Core middleware - viet lai 1 middleware",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang15",
+      "tasks": [{
+        "id": "#113_OpenSource",
+        "num": "113",
+        "category": "OpenSource",
+        "text": "Tham gia open source .NET - sua 1 bug that",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang16",
+      "tasks": [{
+        "id": "#114_Architecture",
+        "num": "114",
+        "category": "Architecture",
+        "text": "Doc DDIA - ve diagram cho project",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#127_Blog",
+        "num": "127",
+        "category": "Blog",
+        "text": "Viet blog ky thuat dau tien len viblo.asia / dev.to",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang17",
+      "tasks": [{
+        "id": "#115_Debug",
+        "num": "115",
+        "category": "Debug",
+        "text": "Debug performance that - ghi lai quy trinh Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#128_Feedback",
+        "num": "128",
+        "category": "Feedback",
+        "text": "Xin senior review toan bo URL shortener - ghi lai feedback",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang18",
+      "tasks": [{
+        "id": "#116_DayLai",
+        "num": "116",
+        "category": "DayLai",
+        "text": "Day lai 1 nguoi khac (blog hoac video) - minh hoa 3 phase",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }]
+  },
+  "gd3": {
+    "title": "Giai Đoạn 3 (Tháng 19-36): Thực Chiến",
+    "sections": [{
+      "period": "Thang19-36",
+      "tasks": [{
+        "id": "#117_TiepTuc",
+        "num": "117",
+        "category": "TiepTuc",
+        "text": "Tiep tuc sach nang cao, moi bai tap code deu Work+Right+Fast",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang19-24",
+      "tasks": [{
+        "id": "#129_RealWorld",
+        "num": "129",
+        "category": "RealWorld",
+        "text": "Xay project thuc co nguoi dung that (deploy Railway/Render)",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#130_Blog",
+        "num": "130",
+        "category": "Blog",
+        "text": "Moi thang viet 1 bai blog giai thich cho nguoi moi",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#131_Debug",
+        "num": "131",
+        "category": "Debug",
+        "text": "Khi co bug that: ghi lai debug Work+Right+Fast",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }, {
+      "period": "Thang25-36",
+      "tasks": [{
+        "id": "#132_OpenSource",
+        "num": "132",
+        "category": "OpenSource",
+        "text": "Contribute open source: fix bug duoc merge boi maintainer",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#133_SystemDesign",
+        "num": "133",
+        "category": "SystemDesign",
+        "text": "Moi thang ve System Design diagram Tiki/Shopee/Zalo",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#134_DayLai",
+        "num": "134",
+        "category": "DayLai",
+        "text": "Mentor 1 nguoi hoc code - ghi lai dieu ban hoc khi day",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#135_Architecture",
+        "num": "135",
+        "category": "Architecture",
+        "text": "Doc het DDIA - viet tong ket thiet ke lai URL shortener",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }]
+  },
+  "gd4": {
+    "title": "Giai Đoạn 4 (Tháng 37-60): Master",
+    "sections": [{
+      "period": "Thang37-60",
+      "tasks": [{
+        "id": "#118_ThoiQuen",
+        "num": "118",
+        "category": "ThoiQuen",
+        "text": "Tu duy master - ap dung 3 phase cho bat ky van de nao",
+        "isPriority": false,
+        "isBonus": false,
+        "status": "todo"
+      }, {
+        "id": "#136_Blog",
+        "num": "136",
+        "category": "Blog",
+        "text": "Viet blog deu (1 bai/thang) giai thich cho nguoi moi hieu",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#137_DayLai",
+        "num": "137",
+        "category": "DayLai",
+        "text": "Khi duoc hoi em nen hoc gi? - tra loi cu the cho tung loai",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#138_SystemDesign",
+        "num": "138",
+        "category": "SystemDesign",
+        "text": "Moi quy design 1 he thong phuc tap - tap trung vao trade-off",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }, {
+        "id": "#139_SystemDesign",
+        "num": "139",
+        "category": "SystemDesign",
+        "text": "Mo phong interview System Design - ghi am va nghe lai",
+        "isPriority": true,
+        "isBonus": true,
+        "status": "todo"
+      }]
+    }]
+  }
+};
+const BRIDGES = [{
+  "id": "Bridge_1_2",
+  "name": "Bridge 1→2",
+  "condition": "Clean Architecture, DDD Aggregate, EF Core migrations",
+  "task": "Tách OrderModule và UserModule thành 2 bounded contexts rõ ràng; thay domain event trực tiếp bằng MediatR Notification; viết 1 integration test verify module A không import trực tiếp code của module B",
+  "done": "Module boundary không vi phạm (test pass); MediatR notification hoạt động; không có cross-module direct dependency",
+  "priority": "🔴 CAO",
+  "note": "Xem Kamil Grzybek repo trước khi làm"
+}, {
+  "id": "Bridge_2_3",
+  "name": "Bridge 2→3",
+  "condition": "Module boundaries, in-process messaging, contract testing",
+  "task": "Viết Dockerfile cho app Stage 2. Tạo docker-compose.yml chạy cùng lúc: app + RabbitMQ + PostgreSQL. Gửi 1 OrderPlaced event từ app qua RabbitMQ; viết consumer đơn giản in ra console",
+  "done": "docker-compose up chạy được; message gửi qua; consumer nhận được; không cần restart",
+  "priority": "🔴 CAO (blocker)",
+  "note": "Docker là điều kiện cứng – không có thì Stage 3 không chạy được"
+}, {
+  "id": "Bridge_3_4",
+  "name": "Bridge 3→4",
+  "condition": "Outbox, Saga, distributed tracing",
+  "task": "Tìm N+1 query trong codebase Stage 3 bằng EF Core logging. Fix bằng Include/Select. Setup PgBouncer local. Đo connection count trước/sau. Viết 1 backward-compatible migration (add nullable column)",
+  "done": "N+1 fix verified bằng SQL log; PgBouncer chạy; migration không break existing code",
+  "priority": "🔴 CAO",
+  "note": "Dùng EF Core logs + pg_stat_statements để find query"
+}, {
+  "id": "Bridge_4_5",
+  "name": "Bridge 4→5",
+  "condition": "DB internals, partitioning, RLS",
+  "task": "Hoàn thành TypeScript Handbook Basics + Everyday Types. Làm React Quick Start (tic-tac-toe). Build 1 API client gọi .NET backend từ TypeScript, hiển thị list orders",
+  "done": "TypeScript compile không lỗi; React component render data từ .NET API; hiểu SSR vs CSR",
+  "priority": "🔴 CAO",
+  "note": "Quan trọng: TypeScript TRƯỚC React, React TRƯỚC Next.js – không nhảy"
+}, {
+  "id": "Bridge_5_6",
+  "name": "Bridge 5→6",
+  "condition": "Next.js, auth, E2E testing",
+  "task": "SSH vào 1 Linux VM (VPS hoặc WSL). Thực hành: file permissions, process management, cron jobs, systemd. Viết multi-stage Dockerfile. Setup GitHub Actions chạy test + build image",
+  "done": "SSH thành công; service start/stop bằng systemd; CI/CD pipeline xanh lên GitHub",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "Dùng WSL nếu Windows; hoặc free tier VPS như fly.io"
+}, {
+  "id": "Bridge_6_7",
+  "name": "Bridge 6→7",
+  "condition": "K8s, Prometheus/Grafana, CI/CD",
+  "task": "Cài Python. Làm Python Official Tutorial phần 1-5. Xem Karpathy LLM video (1 giờ). Gọi OpenAI Chat API bằng Python, hỏi 1 câu và in ra câu trả lời",
+  "done": "Python script chạy được; gọi được OpenAI API; hiểu token, temperature, system prompt",
+  "priority": "🔴 CAO (domain mới)",
+  "note": "Karpathy video là bắt buộc – không xem thì sẽ dùng LLM như magic box"
+}, {
+  "id": "Bridge_7_8",
+  "name": "Bridge 7→8",
+  "condition": "RAG, vector DB, LLM observability",
+  "task": "Đọc Crypto101 Ch.1-4. Implement JWT authentication trong .NET API: issue token + validate token. Test với Postman: expired token, tampered token, valid token",
+  "done": "JWT issue/validate hoạt động; expired token trả 401; tampered token trả 401; happy path 200",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "Crypto101 trước – hiểu tại sao JWT an toàn (hoặc không)"
+}, {
+  "id": "Bridge_8_9",
+  "name": "Bridge 8→9",
+  "condition": "OAuth2, JWT, identity server",
+  "task": "Dùng dig/nslookup trace DNS resolution. Hiểu A record, CNAME, TTL. Deploy app lên 2 Fly.io regions. Verify latency từ VN vs US",
+  "done": "dig hoạt động; 2 region deploy thành công; latency difference đo được",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "Fly.io free tier đủ để thực hành multi-region"
+}, {
+  "id": "Bridge_9_X",
+  "name": "Bridge 9→X",
+  "condition": "Feature flags, multi-region, eventual consistency",
+  "task": "Lấy 1 class legacy (không có test). Viết 3 characterization tests capture behavior hiện tại. Refactor 1 phần nhỏ mà không break tests",
+  "done": "Tests pass trước refactor; tests vẫn pass sau refactor; behavior không thay đổi",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "Dùng codebase cũ nhất bạn có để thực hành"
+}, {
+  "id": "Bridge_X_Y",
+  "name": "Bridge X→Y",
+  "condition": "Legacy patterns, branch-by-abstraction, ADR",
+  "task": "Đọc DDIA Chapter 1 (Reliable, Scalable, Maintainable) + Chapter 5 (Replication). Đọc Raft paper Section 1-5. Vẽ sơ đồ leader election từ memory",
+  "done": "DDIA Ch.1+5 đọc xong; sơ đồ Raft vẽ được không nhìn tài liệu",
+  "priority": "🟠 CÓ THỂ SONG SONG",
+  "note": "DDIA nên đọc sớm hơn – không cần đợi Stage X xong"
+}, {
+  "id": "Bridge_Y_Z",
+  "name": "Bridge Y→Z",
+  "condition": "Distributed consensus, CRDTs, consistency models",
+  "task": "Làm 3 PortSwigger labs: SQL Injection (basic), Stored XSS, CSRF. Đọc OWASP Top 10 và map từng item vào codebase Stage 1-4 của bạn",
+  "done": "3 labs hoàn thành; OWASP mapping document tạo xong",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "PortSwigger labs miễn phí – không cần account premium"
+}, {
+  "id": "Bridge_Z_Ω",
+  "name": "Bridge Z→Ω",
+  "condition": "Threat modeling, Vault, SAST/DAST, Zero Trust",
+  "task": "Đọc K&R C Chapter 1-3. Viết Hello World, Fibonacci, linked list bằng C. Compile và chạy. Đọc OSTEP Chapter 1 (Intro) + Chapter 4 (Processes)",
+  "done": "C code compile + chạy; hiểu stack vs heap; đọc được OSTEP chapter",
+  "priority": "🟠 OPTIONAL",
+  "note": "Bridge khó nhất – không phải mọi developer cần đến Stage Ω"
+}, {
+  "id": "Bridge_Ω_Ξ",
+  "name": "Bridge Ω→Ξ",
+  "condition": "OS internals, GC, JIT, CPU architecture, profiling",
+  "task": "Xem Simple Made Easy talk (1 giờ). Đọc Philosophy of SW Design Chapter 1-3. Review lại codebase Stage 1 của bạn: liệt kê 5 chỗ phức tạp không cần thiết. Refactor 1 chỗ.",
+  "done": "Talk xem xong; 5 điểm phức tạp liệt kê; 1 refactor thực hiện và documented trong ADR",
+  "priority": "🟡 TRUNG BÌNH",
+  "note": "Stage Ξ không có điểm kết thúc – đây là tư duy suốt đời"
 }];
 
 // ── HELPERS ───────────────────────────────────────────────
@@ -2770,6 +4402,424 @@ function ReminderView({
     key: r.id,
     r: r
   })))));
+}
+
+// ── LỘ TRÌNH CHIẾN BINH VIEW ──────────────────────────────
+function LoTrinhView() {
+  const [activeGD, setActiveGD] = useState('gd1');
+  const [taskStatus, setTaskStatus] = useState(() => ls.get('lotrinh_status', {}));
+  const [expandedSections, setExpandedSections] = useState({});
+  useEffect(() => {
+    ls.set('lotrinh_status', taskStatus);
+  }, [taskStatus]);
+  const toggleTask = taskId => {
+    setTaskStatus(prev => {
+      const cur = prev[taskId] || 'todo';
+      const next = cur === 'todo' ? 'doing' : cur === 'doing' ? 'done' : 'todo';
+      return {
+        ...prev,
+        [taskId]: next
+      };
+    });
+  };
+  const toggleSection = key => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+  const gd = GIAI_DOAN[activeGD];
+  const allTasks = gd.sections.flatMap(s => s.tasks);
+  const doneTasks = allTasks.filter(t => taskStatus[t.id] === 'done').length;
+  const doingTasks = allTasks.filter(t => taskStatus[t.id] === 'doing').length;
+  const pct = allTasks.length > 0 ? Math.round(doneTasks / allTasks.length * 100) : 0;
+  const statusStyle = {
+    todo: {
+      bg: '#f8fafc',
+      border: '#e2e8f0',
+      color: '#94a3b8',
+      icon: '○'
+    },
+    doing: {
+      bg: '#fffbeb',
+      border: '#fde68a',
+      color: '#d97706',
+      icon: '◐'
+    },
+    done: {
+      bg: '#f0fdf4',
+      border: '#bbf7d0',
+      color: '#10b981',
+      icon: '●'
+    }
+  };
+  const catColors = {
+    MentalModel: '#8b5cf6',
+    Leetcode_Work: '#3b82f6',
+    Leetcode_Right: '#0ea5e9',
+    Leetcode_Fast: '#06b6d4',
+    CSharp: '#10b981',
+    CSharp_Work: '#059669',
+    CSharp_Right: '#047857',
+    CSharp_Fast: '#065f46',
+    Test: '#f59e0b',
+    Test_Work: '#d97706',
+    Test_Right: '#b45309',
+    TongKet: '#ef4444',
+    Debug: '#dc2626',
+    Architecture: '#7c3aed',
+    Performance: '#2563eb',
+    Feedback: '#db2777',
+    OpenSource: '#ea580c',
+    Blog: '#65a30d',
+    DayLai: '#0891b2',
+    SystemDesign: '#4f46e5',
+    ScaleThinking: '#7c3aed',
+    Leetcode: '#3b82f6',
+    SachXin: '#8b5cf6',
+    Refactor: '#10b981',
+    ThoiQuen: '#f97316',
+    Viet: '#06b6d4',
+    CongCu: '#84cc16',
+    DocCode: '#6366f1',
+    RealWorld: '#059669',
+    TiepTuc: '#0ea5e9'
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      flexWrap: 'wrap'
+    }
+  }, Object.entries(GIAI_DOAN).map(([id, gd]) => {
+    const tasks = gd.sections.flatMap(s => s.tasks);
+    const done = tasks.filter(t => taskStatus[t.id] === 'done').length;
+    const pct = tasks.length > 0 ? Math.round(done / tasks.length * 100) : 0;
+    const active = activeGD === id;
+    return /*#__PURE__*/React.createElement("button", {
+      key: id,
+      onClick: () => setActiveGD(id),
+      style: {
+        padding: '10px 18px',
+        borderRadius: 12,
+        border: `2px solid ${active ? '#10b981' : '#e2e8f0'}`,
+        background: active ? '#10b981' : 'white',
+        color: active ? 'white' : '#475569',
+        fontWeight: 700,
+        fontSize: 13,
+        cursor: 'pointer',
+        transition: 'all .15s'
+      }
+    }, gd.title.split('(')[0].trim(), /*#__PURE__*/React.createElement("span", {
+      style: {
+        marginLeft: 8,
+        fontSize: 11,
+        opacity: .8
+      }
+    }, pct, "%"));
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: 'white',
+      borderRadius: 16,
+      border: '1px solid #e2e8f0',
+      padding: '20px 24px',
+      boxShadow: '0 1px 4px rgba(0,0,0,.04)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 900,
+      color: '#0f172a',
+      fontSize: 15
+    }
+  }, gd.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: '#94a3b8',
+      fontSize: 13,
+      marginTop: 2
+    }
+  }, allTasks.length, " nhi\u1EC7m v\u1EE5 \xB7 ", doneTasks, " ho\xE0n th\xE0nh \xB7 ", doingTasks, " \u0111ang l\xE0m")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 28,
+      fontWeight: 900,
+      color: '#10b981'
+    }
+  }, pct, "%"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      color: '#94a3b8',
+      fontWeight: 700,
+      textTransform: 'uppercase'
+    }
+  }, "Progress"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 8,
+      background: '#f1f5f9',
+      borderRadius: 9,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: '100%',
+      background: 'linear-gradient(90deg,#10b981,#34d399)',
+      width: `${pct}%`,
+      borderRadius: 9,
+      transition: 'width .6s ease'
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 16,
+      marginTop: 12
+    }
+  }, [{
+    label: 'Chưa làm',
+    val: allTasks.length - doneTasks - doingTasks,
+    color: '#94a3b8'
+  }, {
+    label: 'Đang làm',
+    val: doingTasks,
+    color: '#d97706'
+  }, {
+    label: 'Hoàn thành',
+    val: doneTasks,
+    color: '#10b981'
+  }].map((s, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 8,
+      height: 8,
+      borderRadius: '50%',
+      background: s.color
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: '#64748b',
+      fontWeight: 600
+    }
+  }, s.label, ": ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: s.color
+    }
+  }, s.val)))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, gd.sections.map((section, si) => {
+    const key = `${activeGD}_${si}`;
+    const isOpen = expandedSections[key] !== false; // default open
+    const secDone = section.tasks.filter(t => taskStatus[t.id] === 'done').length;
+    const secTotal = section.tasks.length;
+    const secPct = secTotal > 0 ? Math.round(secDone / secTotal * 100) : 0;
+    return /*#__PURE__*/React.createElement("div", {
+      key: key,
+      style: {
+        background: 'white',
+        borderRadius: 14,
+        border: '1px solid #e2e8f0',
+        overflow: 'hidden',
+        boxShadow: '0 1px 3px rgba(0,0,0,.04)'
+      }
+    }, /*#__PURE__*/React.createElement("button", {
+      onClick: () => toggleSection(key),
+      style: {
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '12px 16px',
+        background: 'none',
+        border: 'none',
+        cursor: 'pointer',
+        textAlign: 'left'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 14,
+        fontWeight: 800,
+        color: '#1e293b'
+      }
+    }, "\uD83D\uDCC5 ", section.period), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 11,
+        color: '#94a3b8',
+        fontWeight: 600
+      }
+    }, secDone, "/", secTotal), secPct === 100 && /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 10,
+        background: '#d1fae5',
+        color: '#065f46',
+        padding: '1px 7px',
+        borderRadius: 99,
+        fontWeight: 900
+      }
+    }, "\u2713 DONE")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        width: 80,
+        height: 4,
+        background: '#f1f5f9',
+        borderRadius: 9,
+        overflow: 'hidden'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        height: '100%',
+        background: '#10b981',
+        width: `${secPct}%`,
+        transition: 'width .5s'
+      }
+    })), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: '#94a3b8',
+        fontSize: 14,
+        transform: isOpen ? 'rotate(180deg)' : 'rotate(0)',
+        transition: 'transform .2s'
+      }
+    }, "\u25BE"))), isOpen && /*#__PURE__*/React.createElement("div", {
+      style: {
+        borderTop: '1px solid #f1f5f9'
+      }
+    }, section.tasks.map(task => {
+      const status = taskStatus[task.id] || 'todo';
+      const ss = statusStyle[status];
+      const catColor = catColors[task.category] || '#64748b';
+      return /*#__PURE__*/React.createElement("div", {
+        key: task.id,
+        onClick: () => toggleTask(task.id),
+        style: {
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: 12,
+          padding: '10px 16px',
+          borderBottom: '1px solid #f8fafc',
+          cursor: 'pointer',
+          background: ss.bg,
+          transition: 'background .15s'
+        },
+        onMouseEnter: e => e.currentTarget.style.opacity = '.85',
+        onMouseLeave: e => e.currentTarget.style.opacity = '1'
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          width: 22,
+          height: 22,
+          borderRadius: 6,
+          border: `2px solid ${ss.border}`,
+          background: ss.bg,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: ss.color,
+          fontSize: 13,
+          fontWeight: 900,
+          flexShrink: 0,
+          marginTop: 1
+        }
+      }, ss.icon), /*#__PURE__*/React.createElement("div", {
+        style: {
+          flex: 1,
+          minWidth: 0
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          flexWrap: 'wrap',
+          marginBottom: 2
+        }
+      }, /*#__PURE__*/React.createElement("span", {
+        style: {
+          fontSize: 10,
+          fontWeight: 900,
+          padding: '1px 6px',
+          borderRadius: 4,
+          background: catColor + '20',
+          color: catColor
+        }
+      }, task.category), task.isPriority && /*#__PURE__*/React.createElement("span", {
+        style: {
+          fontSize: 9,
+          fontWeight: 900,
+          background: '#fef3c7',
+          color: '#92400e',
+          padding: '1px 6px',
+          borderRadius: 4
+        }
+      }, "\u2B50 \u01AFU TI\xCAN"), task.isBonus && /*#__PURE__*/React.createElement("span", {
+        style: {
+          fontSize: 9,
+          fontWeight: 900,
+          background: '#ede9fe',
+          color: '#5b21b6',
+          padding: '1px 6px',
+          borderRadius: 4
+        }
+      }, "+ B\u1ED4 SUNG")), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 13,
+          fontWeight: 600,
+          color: status === 'done' ? '#94a3b8' : '#1e293b',
+          textDecoration: status === 'done' ? 'line-through' : 'none'
+        }
+      }, /*#__PURE__*/React.createElement("span", {
+        style: {
+          color: '#94a3b8',
+          fontSize: 11,
+          marginRight: 6
+        }
+      }, "#", task.num), task.text)), /*#__PURE__*/React.createElement("span", {
+        style: {
+          fontSize: 10,
+          fontWeight: 900,
+          padding: '2px 8px',
+          borderRadius: 6,
+          background: ss.bg,
+          color: ss.color,
+          border: `1px solid ${ss.border}`,
+          flexShrink: 0,
+          whiteSpace: 'nowrap'
+        }
+      }, status === 'todo' ? 'Chưa làm' : status === 'doing' ? 'Đang làm' : 'Xong ✓'));
+    })));
+  })));
 }
 
 // ── MAIN APP ──────────────────────────────────────────────
@@ -3855,6 +5905,10 @@ function App() {
     label: "Idea Sandbox",
     icon: "\uD83E\uDDE0"
   }), /*#__PURE__*/React.createElement(NavItem, {
+    id: "lotrinhcn",
+    label: "L\u1ED9 Tr\xECnh CN",
+    icon: "\uD83D\uDDFA\uFE0F"
+  }), /*#__PURE__*/React.createElement(NavItem, {
     id: "stats",
     label: "Weekly Stats",
     icon: "\uD83D\uDCCA"
@@ -4637,7 +6691,67 @@ function App() {
       fontSize: 13,
       marginTop: 2
     }
-  }, activeStage.constraint))), activeStage.maintenance && /*#__PURE__*/React.createElement("div", {
+  }, activeStage.constraint))), (() => {
+    const stageNum = activeStage.index;
+    const bridge = BRIDGES.find(b => b.name.startsWith(`Bridge ${stageNum}→`));
+    if (!bridge) return null;
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: '#eff6ff',
+        border: '1px solid #bfdbfe',
+        borderRadius: 14,
+        padding: '16px 18px',
+        marginBottom: 14
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 8,
+        marginBottom: 10
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 18
+      }
+    }, "\uD83D\uDD17"), /*#__PURE__*/React.createElement("strong", {
+      style: {
+        color: '#1e40af',
+        fontSize: 14
+      }
+    }, "Bridge ", bridge.name.split('Bridge ')[1], " \u2014 Mini-Project b\u1EAFt bu\u1ED9c tr\u01B0\u1EDBc khi qua Stage ti\u1EBFp theo"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 10,
+        fontWeight: 900,
+        padding: '2px 8px',
+        borderRadius: 6,
+        background: bridge.priority.includes('CAO') ? '#fee2e2' : '#fef3c7',
+        color: bridge.priority.includes('CAO') ? '#991b1b' : '#92400e'
+      }
+    }, bridge.priority)), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 13,
+        color: '#1e3a8a',
+        lineHeight: 1.7,
+        marginBottom: 10
+      }
+    }, /*#__PURE__*/React.createElement("strong", null, "Task:"), " ", bridge.task), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: '#3730a3',
+        background: 'white',
+        borderRadius: 8,
+        padding: '8px 12px',
+        border: '1px solid #c7d2fe'
+      }
+    }, /*#__PURE__*/React.createElement("strong", null, "\u2705 Done khi:"), " ", bridge.done), bridge.note && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 11,
+        color: '#6366f1',
+        marginTop: 6
+      }
+    }, "\uD83D\uDCA1 ", bridge.note));
+  })(), activeStage.maintenance && /*#__PURE__*/React.createElement("div", {
     style: {
       background: '#fffbeb',
       border: '1px solid #fde68a',
@@ -5880,7 +7994,7 @@ function App() {
       color: '#64748b',
       marginTop: 2
     }
-  }, item.sub))))))), currentView === 'ideation' && /*#__PURE__*/React.createElement("div", {
+  }, item.sub))))))), currentView === 'lotrinhcn' && /*#__PURE__*/React.createElement(LoTrinhView, null), currentView === 'ideation' && /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       flexDirection: 'column',
